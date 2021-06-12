@@ -1,0 +1,83 @@
+### Added by Zinit's installer
+if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
+    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
+        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+        print -P "%F{160}▓▒░ The clone has failed.%f%b"
+fi
+
+source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+### End of Zinit's installer chunk
+
+
+### Zinitでプラグインを入れる
+zinit light zsh-users/zsh-autosuggestions
+zinit light zdharma/fast-syntax-highlighting
+
+
+typeset -U path PATH
+
+
+### homebrewの設定
+### cf).https://zenn.dev/ress/articles/069baf1c305523dfca3d
+path=(
+	/opt/homebrew/bin(N-/)
+	/usr/local/bin(N-/)
+	$path
+)
+if (( $+commands[sw_vers] )) && (( $+commands[arch] )); then
+	[[ -x /usr/local/bin/brew ]] && alias brew="arch -arch x86_64 /usr/local/bin/brew"
+	alias x64='exec arch -x86_64 /bin/zsh'
+	alias a64='exec arch -arm64e /bin/zsh'
+	switch-arch() {
+		if  [[ "$(uname -m)" == arm64 ]]; then
+			arch=x86_64
+		elif [[ "$(uname -m)" == x86_64 ]]; then
+			arch=arm64e
+		fi
+		exec arch -arch $arch /bin/zsh
+	}
+fi
+
+setopt magic_equal_subst
+
+
+### 環境変数の設定
+export LANG=ja_JP.UTF-8
+export EDITOR=nano
+export GOPATH=$HOME/go
+export PIPENV_VENV_IN_PROJECT=true
+
+
+### Pathの設定
+path=(
+    $HOME/Library/Android/sdk(N-/)
+    $HOME/Library/Android/sdk/platform-tools(N-/)
+    $HOME/.anyenv/bin(N-/)
+    $HOME/.cargo/bin(N-/)
+    $GOPATH/bin(N-/)
+    $path
+)
+
+
+### エイリアスの設定
+alias arduino='/Applications/Arduino.app/Contents/MacOS/Arduino'
+alias dcp='docker-compose'
+alias hex='hexyl'
+alias ll='lsd -la'
+alias ls='lsd'
+alias nano='/usr/local/bin/nano -i -m'
+alias reshell='exec $SHELL -l' #shellの再起動
+alias rlang='/usr/local/bin/r'
+
+
+### その他
+eval "$(starship init zsh)"
+eval "$(gh completion -s zsh)"
+eval "$(direnv hook zsh)"
+eval "$(anyenv init -)"
+
+ssh-add -K ~/.ssh/id_rsa &> /dev/null
