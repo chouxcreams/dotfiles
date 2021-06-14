@@ -1,0 +1,12 @@
+### all ignore ###
+/*
+/.**
+
+### not ignore ###
+!/.gitignore
+!/README.md
+!/LICENSE
+!/.zshenv
+!/.zprofile
+!/.zshrc
+!/init.sh
