@@ -10,3 +10,7 @@
 !/.zprofile
 !/.zshrc
 !/init.sh
+!/.zsh
+!/.zsh/completion
+/.zsh/completion/**
+!.gitkeep
