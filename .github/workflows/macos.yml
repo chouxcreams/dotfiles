@@ -2,7 +2,7 @@ name: macos
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   macos-test:
