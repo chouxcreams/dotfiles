@@ -74,6 +74,12 @@ alias reshell='exec $SHELL -l' #shellの再起動
 alias rlang='/usr/local/bin/r'
 
 
+### gitやdockerの補完の設定
+zstyle ':completion:*:*:git:*' script ~/dotfiles/.zsh/completion/git-completion.bash
+fpath=(~/dotfiles/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
+
+
 ### その他
 eval "$(starship init zsh)"
 eval "$(gh completion -s zsh)"
