@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Run init.sh
-      run: ${GITHUB_WORKSPACE}/init.sh
+      run: . ${GITHUB_WORKSPACE}/init.sh
 
     - name: Load .zshenv
       run: |
