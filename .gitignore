@@ -13,4 +13,5 @@
 !/.zsh
 !/.zsh/completion
 /.zsh/completion/**
+!/.nanorc
 !.gitkeep
