@@ -14,4 +14,7 @@
 !/.zsh/completion
 /.zsh/completion/**
 !/.nanorc
+!/.github
+!/.github/workflow
+!/.github/workflow/*
 !.gitkeep

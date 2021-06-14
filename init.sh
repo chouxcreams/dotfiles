@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash -e
 
 DOTPATH="$HOME/dotfiles"
 ln -s $DOTPATH/.zshenv $HOME/.zshenv
