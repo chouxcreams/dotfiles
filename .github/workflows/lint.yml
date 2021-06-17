@@ -16,12 +16,3 @@ jobs:
 
     - name: Check init.sh
       run: shellcheck ${GITHUB_WORKSPACE}/init.sh
-
-    - name: Check .zshenv
-      run: shellcheck ${GITHUB_WORKSPACE}/.zshenv --exclude=SC2148,SC1090
-
-    - name: Check .zprofile
-      run: shellcheck ${GITHUB_WORKSPACE}/.zprofile --exclude=SC2148,SC1090
-
-    - name: Check .zshrc
-      run: shellcheck ${GITHUB_WORKSPACE}/.zshrc --exclude=SC2148,SC1090
