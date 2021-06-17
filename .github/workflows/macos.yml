@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Copy the directory
-      run: mkdir ${HOME}/dotfiles && cp -P ${GITHUB_WORKSPACE}/ ${HOME}/dotfiles/ 
+      run: mkdir ${HOME}/dotfiles && cp -r ${GITHUB_WORKSPACE}/ ${HOME}/dotfiles/ 
 
     - name: Run init.sh
       run: . ${HOME}/dotfiles/init.sh
