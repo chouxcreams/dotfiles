@@ -13,6 +13,8 @@
 !/.zsh
 !/.zsh/completion
 /.zsh/completion/**
+!/.zsh/rc
+!/.zsh/rc/fzf.zsh
 !/.nanorc
 !/.github
 !/.github/workflows

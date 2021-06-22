@@ -87,3 +87,9 @@ eval "$(direnv hook zsh)"
 eval "$(anyenv init -)"
 
 ssh-add -K ~/.ssh/id_rsa &> /dev/null
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+for file in `\find $ZDOTDIR/.zsh/rc  -maxdepth 1 -type f | grep zsh`; do
+    source $file
+done
