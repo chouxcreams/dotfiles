@@ -16,6 +16,7 @@ autoload -Uz _zinit
 ### Zinitでプラグインを入れる
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma/fast-syntax-highlighting
+zinit light paulirish/git-open
 
 
 typeset -U path PATH
