@@ -13,3 +13,6 @@ curl -o "$DOTPATH"/.zsh/completion/_docker https://raw.githubusercontent.com/doc
 
 # nanoのシンタックスハイライトをインストール
 git clone https://github.com/scopatz/nanorc.git "$DOTPATH"/.nano
+
+mkdir -p "$HOME"/.config
+ln -s "$DOTPATH"/.config/git "$HOME"/.config/git
