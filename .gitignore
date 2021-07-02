@@ -19,4 +19,6 @@
 !/.github
 !/.github/workflows
 !/.github/workflows/*
-!.gitkeep
+!/.config
+!/.config/git
+!/.config/git/**
