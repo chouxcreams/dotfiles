@@ -91,6 +91,14 @@ ssh-add -K ~/.ssh/id_rsa &> /dev/null
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# git add, commit and push
+# 引数にはコミットメッセージを入れる
+gacp() {
+    branch=`git rev-parse --abbrev-ref HEAD`
+    echo $1
+    git add . && git commit -m "$1" && git push -u origin "$branch"
+}
+
 for file in `\find $ZDOTDIR/.zsh/rc  -maxdepth 1 -type f | grep zsh`; do
     source $file
 done
