@@ -104,6 +104,6 @@ gacp() {
     git add . && git commit -m "$1" && git push -u origin "$branch"
 }
 
-for file in `\find $ZDOTDIR/.zsh/rc  -maxdepth 1 -type f | grep zsh`; do
+for file in `\fd . --max-depth 1 --type f --type l | grep zsh`; do
     source $file
 done
