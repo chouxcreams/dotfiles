@@ -51,6 +51,9 @@ export LANG=ja_JP.UTF-8
 export EDITOR=nano
 export GOPATH=$HOME/go
 export PIPENV_VENV_IN_PROJECT=true
+export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_CTRL_T_COMMAND='fd --type f'
+export FZF_ALT_C_COMMAND='fd --type d'
 
 
 ### Pathの設定
