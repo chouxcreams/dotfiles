@@ -17,6 +17,7 @@ autoload -Uz _zinit
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma/fast-syntax-highlighting
 zinit light paulirish/git-open
+zinit light mollifier/cd-gitroot
 
 
 typeset -U path PATH
@@ -76,6 +77,7 @@ alias ls='lsd'
 alias nano='/usr/local/bin/nano -i -m'
 alias reshell='exec $SHELL -l' #shellの再起動
 alias rlang='/usr/local/bin/r'
+alias cdgr='cd-gitroot'
 
 
 ### gitやdockerの補完の設定
