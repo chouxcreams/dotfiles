@@ -22,3 +22,5 @@
 !/.config
 !/.config/git
 !/.config/git/**
+!/git-subcommand
+!/git-subcommand/**

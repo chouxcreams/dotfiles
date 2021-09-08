@@ -64,6 +64,7 @@ path=(
     $HOME/.anyenv/bin(N-/)
     $HOME/.cargo/bin(N-/)
     $GOPATH/bin(N-/)
+    $ZDOTDIR/git-subcommand(N-/)
     $path
 )
 
