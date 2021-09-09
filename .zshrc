@@ -52,6 +52,7 @@ export LANG=ja_JP.UTF-8
 export EDITOR=nano
 export GOPATH=$HOME/go
 export PIPENV_VENV_IN_PROJECT=true
+export VOLTA_HOME=$HOME/.volta
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND='fd --type f'
 export FZF_ALT_C_COMMAND='fd --type d'
@@ -65,6 +66,7 @@ path=(
     $HOME/.cargo/bin(N-/)
     $GOPATH/bin(N-/)
     $ZDOTDIR/git-subcommand(N-/)
+    $VOLTA_HOME/bin(N-/)
     $path
 )
 
