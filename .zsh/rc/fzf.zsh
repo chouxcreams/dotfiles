@@ -11,6 +11,13 @@ fcd() {
     cd "$dir"
 }
 
+# 隣のディレクトリに移動する
+ncd() {
+    local dir
+    dir=$(ls -d ../*/ | fzf)
+    cd $dir
+}
+
 # fbr - checkout git branch (including remote branches), sorted by most recent commit, limit 30 last branches
 gsfr() {
     local branches branch

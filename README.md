@@ -1,7 +1,6 @@
 # dotfiles
 
 [![lint](https://github.com/chouxcreams/dotfiles/actions/workflows/lint.yml/badge.svg)](https://github.com/chouxcreams/dotfiles/actions/workflows/lint.yml)
-
 [![macos](https://github.com/chouxcreams/dotfiles/actions/workflows/macos.yml/badge.svg)](https://github.com/chouxcreams/dotfiles/actions/workflows/macos.yml)
 
 ## インストール方法
