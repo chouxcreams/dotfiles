@@ -7,14 +7,14 @@ gsw () {
 
 fcd() {
     local dir
-    dir=$(find ${1:-.} -path '*/\.*' -prune -o -type d -print 2> /dev/null | fzf +m) &&
+    dir=$(fd . --type directory --max-depth 1 | fzf) &&
     cd "$dir"
 }
 
 # 隣のディレクトリに移動する
 ncd() {
     local dir
-    dir=$(ls -d ../*/ | fzf) &&
+    dir=$(fd . .. --type directory --max-depth 1 | fzf) &&
     cd $dir
 }
 
