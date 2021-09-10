@@ -18,6 +18,12 @@ ncd() {
     cd $dir
 }
 
+gcd() {
+    local dir
+    dir=$(echo $CDPATH | tr ':' '\n'| fzf) &&
+    cd $dir
+}
+
 # fbr - checkout git branch (including remote branches), sorted by most recent commit, limit 30 last branches
 gsfr() {
     local branches branch
