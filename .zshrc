@@ -70,6 +70,11 @@ path=(
     $path
 )
 
+cdpath=(
+    $HOME/dotfiles
+    $cdpath
+)
+
 
 ### エイリアスの設定
 alias arduino='/Applications/Arduino.app/Contents/MacOS/Arduino'
