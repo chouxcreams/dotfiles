@@ -14,7 +14,7 @@ fcd() {
 # 隣のディレクトリに移動する
 ncd() {
     local dir
-    dir=$(ls -d ../*/ | fzf)
+    dir=$(ls -d ../*/ | fzf) &&
     cd $dir
 }
 
