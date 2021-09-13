@@ -10,3 +10,6 @@
 
 [interactive]
     diffFilter = delta --color-only
+
+[alias]
+    sc = switch -c
