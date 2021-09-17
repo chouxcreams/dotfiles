@@ -31,7 +31,7 @@ path=(
 	$path
 )
 if (( $+commands[sw_vers] )) && (( $+commands[arch] )); then
-	[[ -x /usr/local/bin/brew ]] && alias brew="arch -arch x86_64 /usr/local/bin/brew"
+	[[ -x /usr/local/bin/brew ]] && alias brewed="arch -arch x86_64 /usr/local/bin/brew"
 	alias x64='exec arch -x86_64 /bin/zsh'
 	alias a64='exec arch -arm64e /bin/zsh'
 	switch-arch() {
