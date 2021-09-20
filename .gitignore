@@ -20,6 +20,7 @@
 !/.github/workflows
 !/.github/workflows/*
 !/.config
+!/.config/starship.toml
 !/.config/git
 !/.config/git/**
 !/git-subcommand

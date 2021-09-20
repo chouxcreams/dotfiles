@@ -56,6 +56,7 @@ export VOLTA_HOME=$HOME/.volta
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND='fd --type f'
 export FZF_ALT_C_COMMAND='fd --type d'
+export STARSHIP_CONFIG="$ZDOTDIR"/.config/starship.toml
 
 
 ### Pathの設定
