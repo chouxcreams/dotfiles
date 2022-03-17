@@ -32,3 +32,11 @@ gsfr() {
             fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
     git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
 }
+
+fadd() {
+    local default
+    default=$(git config --get delta.side-by-side)
+    git config --local delta.side-by-side false
+    unbuffer git status -s | fzf -m --ansi --preview="echo {} | awk '{print \$2}' | xargs unbuffer git diff" | awk '{print $2}' | xargs git add
+    git config --local delta.side-by-side $default
+}
