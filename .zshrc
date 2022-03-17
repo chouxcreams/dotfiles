@@ -71,10 +71,7 @@ path=(
     $path
 )
 
-cdpath=(
-    $HOME/dotfiles
-    $cdpath
-)
+export GCD_PATH="$HOME/dotfiles:$GCD_PATH"
 
 
 ### エイリアスの設定

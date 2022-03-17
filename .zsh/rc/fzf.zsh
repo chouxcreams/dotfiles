@@ -20,7 +20,7 @@ ncd() {
 
 gcd() {
     local dir
-    dir=$(echo $CDPATH | tr ':' '\n'| fzf) &&
+    dir=$(echo $GCD_PATH | tr ':' '\n'| fzf) &&
     cd $dir
 }
 
