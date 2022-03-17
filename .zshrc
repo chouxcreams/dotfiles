@@ -97,6 +97,7 @@ eval "$(starship init zsh)"
 eval "$(gh completion -s zsh)"
 eval "$(direnv hook zsh)"
 eval "$(anyenv init -)"
+eval "$(zoxide init zsh)"
 
 ssh-add -K ~/.ssh/id_rsa &> /dev/null
 
