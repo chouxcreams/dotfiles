@@ -68,6 +68,7 @@ path=(
     $GOPATH/bin(N-/)
     $ZDOTDIR/git-subcommand(N-/)
     $VOLTA_HOME/bin(N-/)
+    $HOME/.poetry/bin(N-/)
     $path
 )
 
@@ -119,5 +120,3 @@ gacp() {
 for file in `\fd .zsh $ZDOTDIR/.zsh/rc --max-depth 1 --type f --type l`; do
     source $file
 done
-
-export PATH="$HOME/.poetry/bin:$PATH"
