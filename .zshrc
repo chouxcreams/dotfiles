@@ -85,6 +85,7 @@ alias nano='/usr/local/bin/nano -i -m'
 alias reshell='exec $SHELL -l' #shellの再起動
 alias rlang='/usr/local/bin/r'
 alias cdgr='cd-gitroot'
+alias cd='z'
 
 
 ### gitやdockerの補完の設定

@@ -8,20 +8,20 @@ gsw () {
 fcd() {
     local dir
     dir=$(fd . --type directory --max-depth 1 | fzf) &&
-    cd "$dir"
+    z "$dir"
 }
 
 # 隣のディレクトリに移動する
 ncd() {
     local dir
     dir=$(fd . .. --type directory --max-depth 1 | fzf) &&
-    cd $dir
+    z $dir
 }
 
 gcd() {
     local dir
     dir=$(echo $GCD_PATH | tr ':' '\n'| fzf) &&
-    cd $dir
+    z $dir
 }
 
 # fbr - checkout git branch (including remote branches), sorted by most recent commit, limit 30 last branches
