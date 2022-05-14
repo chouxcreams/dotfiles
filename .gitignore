@@ -25,3 +25,5 @@
 !/.config/git/**
 !/git-subcommand
 !/git-subcommand/**
+!/.config/karabiner
+!/.config/karabiner/karabiner.json
