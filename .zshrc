@@ -77,7 +77,7 @@ export GCD_PATH="$HOME/dotfiles:$GCD_PATH"
 
 ### エイリアスの設定
 alias arduino='/Applications/Arduino.app/Contents/MacOS/Arduino'
-alias dcp='docker-compose'
+alias dcp='docker compose'
 alias hex='hexyl'
 alias ll='lsd -la'
 alias ls='lsd'
