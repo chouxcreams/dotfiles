@@ -14,10 +14,12 @@ autoload -Uz _zinit
 
 
 ### Zinitでプラグインを入れる
-zinit light zsh-users/zsh-autosuggestions
-zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light paulirish/git-open
-zinit light mollifier/cd-gitroot
+zinit wait lucid blockf light-mode for \
+    @'zsh-users/zsh-autosuggestions' \
+    @'zsh-users/zsh-completions' \
+    @'zdharma-continuum/fast-syntax-highlighting' \
+    @'paulirish/git-open' \
+    @'mollifier/cd-gitroot'
 
 
 typeset -U path PATH
@@ -89,8 +91,6 @@ alias cd='z'
 
 
 ### gitやdockerの補完の設定
-zstyle ':completion:*:*:git:*' script ~/dotfiles/.zsh/completion/git-completion.bash
-fpath=(~/dotfiles/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
 
 
