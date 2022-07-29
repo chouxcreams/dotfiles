@@ -1,0 +1,11 @@
+### all ignore ###
+/*
+/.**
+
+### not ignore ###
+!/.gitignore
+!/.zshrc
+!/.zprofile
+!/.zshenv
+!/rc
+!/rc/*

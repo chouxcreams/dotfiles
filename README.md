@@ -7,5 +7,5 @@
 
 ``` shell
 git clone git@github.com:chouxcreams/dotfiles.git ~ # ホームディレクトリにクローン
-. ~/dotfiles/init.sh # 初期化スクリプトを実行
+make init # 初期化スクリプトを実行
 ```
