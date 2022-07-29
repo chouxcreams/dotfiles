@@ -4,6 +4,7 @@
 
 ### not ignore ###
 !/.gitignore
+!/.editorconfig
 !/README.md
 !/LICENSE
 !/.zshenv
