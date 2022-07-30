@@ -7,3 +7,5 @@ mv "$HOME"/.mysql_history "$MYSQL_HISTFILE"
 mv "$HOME"/.sqlite_history "$SQLITE_HISTORY"
 mv "$HOME"/.psql_history "$PSQL_HISTORY"
 mv -f "$HOME"/.npm "$XDG_CACHE_HOME"/npm
+mv -f "$HOME"/go "$XDG_DATA_HOME"/go
+mv -f "$HOME"/.aws "$XDG_CONFIG_HOME"/aws
