@@ -12,3 +12,4 @@ mv -f "$HOME"/.aws "$XDG_CONFIG_HOME"/aws
 mv -f "$HOME"/.rustup "$XDG_DATA_HOME"/rustup
 mv -f "$HOME"/.cargo "$XDG_DATA_HOME"/cargo
 mv -f "$HOME"/.gem "$XDG_DATA_HOME"/gem
+mv -f "$HOME"/.elm "$XDG_DATA_HOME"/elm
