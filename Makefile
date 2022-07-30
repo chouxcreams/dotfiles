@@ -3,3 +3,6 @@ init:
 
 dropbox:
 	bash ./scripts/dropbox.sh
+
+macos:
+	bash ./scripts/macos.sh
