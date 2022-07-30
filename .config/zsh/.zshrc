@@ -56,7 +56,6 @@ export PIPENV_VENV_IN_PROJECT=true
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND='fd --type f'
 export FZF_ALT_C_COMMAND='fd --type d'
-export STARSHIP_CONFIG="$ZDOTDIR"/.config/starship.toml
 
 ### aws-cli ###
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
@@ -85,6 +84,9 @@ export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
 export PSQL_HISTORY="$XDG_CACHE_HOME/pg/psql_history"
 export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
 export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
+
+### Starship ###
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship.toml
 
 ### Pathの設定
 path=(

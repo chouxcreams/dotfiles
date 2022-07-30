@@ -23,7 +23,7 @@ git clone https://github.com/scopatz/nanorc.git "$XDG_CONFIG_HOME"/nano/.nanorc
 
 ln -sfv "$DOTPATH"/.config/git "$XDG_CONFIG_HOME"
 ln -sfv "$DOTPATH"/.config/nano "$XDG_CONFIG_HOME"
-ln -sfv "$DOTPATH"/.config/starship.toml "$XDG_CONFIG_HOME"
+ln -sfv "$DOTPATH"/.config/starship.toml "$XDG_CONFIG_HOME"/starship.toml
 mkdir -p "$XDG_CONFIG_HOME"/latexmk
 ln -sfv "$DOTPATH"/.config/latexmk/latexmkrc "$XDG_CONFIG_HOME"/latexmk/latexmkrc
 ln -sfv "$XDG_CONFIG_HOME/zsh/.zshenv" "$HOME/.zshenv"
