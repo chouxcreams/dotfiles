@@ -14,7 +14,8 @@ mkdir -p "$XDG_RUNTIME_DIR"
 
 ln -sfv "$DOTPATH"/.config/zsh "$XDG_CONFIG_HOME"
 
-mkdir -p "$XDG_CONFIG_HOME"/.config/zsh/completion
+mkdir -p "$XDG_CONFIG_HOME"/zsh/completion
+mkdir -p "$XDG_DATA_HOME"/zsh
 mkdir -p "$XDG_CACHE_HOME"/pg
 
 # nanoのシンタックスハイライトをインストール
