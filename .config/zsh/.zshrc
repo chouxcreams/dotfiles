@@ -64,6 +64,14 @@ export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 ### Golang ###
 export GOPATH="$XDG_DATA_HOME"/go
 
+### Rust ###
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+
+### Ruby ###
+export GEM_HOME="$XDG_DATA_HOME"/gem
+export GEM_SPEC_CACHE="$XDG_CACHE_HOME"/gem
+
 ### Node.js ###
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 
@@ -93,7 +101,7 @@ path=(
     $HOME/Library/Android/sdk(N-/)
     $HOME/Library/Android/sdk/platform-tools(N-/)
     $HOME/.anyenv/bin(N-/)
-    $HOME/.cargo/bin(N-/)
+    $CARGO_HOME/bin(N-/)
     $GOPATH/bin(N-/)
     $ZDOTDIR/git-subcommand(N-/)
     $VOLTA_HOME/bin(N-/)

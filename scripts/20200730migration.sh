@@ -9,3 +9,6 @@ mv "$HOME"/.psql_history "$PSQL_HISTORY"
 mv -f "$HOME"/.npm "$XDG_CACHE_HOME"/npm
 mv -f "$HOME"/go "$XDG_DATA_HOME"/go
 mv -f "$HOME"/.aws "$XDG_CONFIG_HOME"/aws
+mv -f "$HOME"/.rustup "$XDG_DATA_HOME"/rustup
+mv -f "$HOME"/.cargo "$XDG_DATA_HOME"/cargo
+mv -f "$HOME"/.gem "$XDG_DATA_HOME"/gem
