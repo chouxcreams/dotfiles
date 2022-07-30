@@ -49,17 +49,36 @@ fi
 setopt magic_equal_subst
 
 
-### 環境変数の設定
+#### 環境変数の設定 ####
 export LANG=ja_JP.UTF-8
 export EDITOR=nano
 export GOPATH=$HOME/go
 export PIPENV_VENV_IN_PROJECT=true
-export VOLTA_HOME=$HOME/.volta
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND='fd --type f'
 export FZF_ALT_C_COMMAND='fd --type d'
 export STARSHIP_CONFIG="$ZDOTDIR"/.config/starship.toml
 
+### Node.js ###
+export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
+
+### npm ###
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+
+### Volta ###
+export VOLTA_HOME="$XDG_DATA_HOME"/volta
+
+### MySQL ###
+export MYSQL_HISTFILE="$XDG_DATA_HOME"/mysql_history
+
+### SQLite ###
+export SQLITE_HISTORY="$XDG_DATA_HOME"/sqlite_history
+
+### PostgreSQL ###
+export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
+export PSQL_HISTORY="$XDG_CACHE_HOME/pg/psql_history"
+export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
+export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
 
 ### Pathの設定
 path=(
