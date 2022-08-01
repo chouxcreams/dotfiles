@@ -12,6 +12,8 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 
 ### Zinitでプラグインを入れる
 zinit wait lucid blockf light-mode for \
@@ -159,3 +161,6 @@ gacp() {
 for file in `\fd .zsh $ZDOTDIR/rc --max-depth 1 --type f --type l`; do
     source $file
 done
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
