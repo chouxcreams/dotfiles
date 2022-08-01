@@ -63,6 +63,10 @@ export FZF_ALT_C_COMMAND='fd --type d'
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 
+### Elm ###
+# IntelliJのElmプラグインがELM_HOMEに対応してるため使わない
+# export ELM_HOME="$XDG_CONFIG_HOME"/elm
+
 ### Golang ###
 export GOPATH="$XDG_DATA_HOME"/go
 
