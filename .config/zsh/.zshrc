@@ -53,7 +53,7 @@ setopt magic_equal_subst
 
 #### 環境変数の設定 ####
 export LANG=ja_JP.UTF-8
-export EDITOR=nano
+export EDITOR=micro
 export PIPENV_VENV_IN_PROJECT=true
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND='fd --type f'
@@ -132,6 +132,8 @@ alias reshell='exec $SHELL -l' #shellの再起動
 alias rlang='/usr/local/bin/r'
 alias cdgr='cd-gitroot'
 alias cd='z'
+alias pathls='echo $PATH | sed -e "s/:/\n/g"'
+alias e='$EDITOR'
 
 
 ### gitやdockerの補完の設定
