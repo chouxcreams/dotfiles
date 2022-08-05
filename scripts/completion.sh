@@ -1,3 +1,5 @@
+#! /usr/local/bin/bash
+
 # gitの補完用スクリプトのダウンロード
 curl -o "$HOME"/.config/zsh/completion/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 curl -o "$HOME"/.config/zsh/completion/_git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
