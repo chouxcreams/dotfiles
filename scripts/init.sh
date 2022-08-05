@@ -5,7 +5,7 @@ XDG_CONFIG_HOME="$HOME"/.config
 XDG_DATA_HOME="$HOME"/.local/share
 XDG_STATE_HOME="$HOME"/.local/state
 XDG_CACHE_HOME="$HOME"/.cache
-XDG_RUNTIME_DIR="$HOMR"/.tmp
+XDG_RUNTIME_DIR="$HOME"/.tmp
 mkdir -p "$XDG_CONFIG_HOME"
 mkdir -p "$XDG_DATA_HOME"
 mkdir -p "$XDG_STATE_HOME"
