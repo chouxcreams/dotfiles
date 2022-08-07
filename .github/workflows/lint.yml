@@ -14,5 +14,8 @@ jobs:
     - name: Install required packages
       run: brew install shellcheck
 
-    - name: Check init.sh
+    - name: Check Scripts
       run: shellcheck ${GITHUB_WORKSPACE}/scripts/*
+
+    - name: Check Git Subcommands
+      run: shellcheck ${GITHUB_WORKSPACE}/.config/git/subcommand
