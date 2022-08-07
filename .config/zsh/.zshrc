@@ -21,7 +21,8 @@ zinit wait lucid blockf light-mode for \
     @'zsh-users/zsh-completions' \
     @'zdharma-continuum/fast-syntax-highlighting' \
     @'paulirish/git-open' \
-    @'mollifier/cd-gitroot'
+    @'mollifier/cd-gitroot' \
+    @'momo-lab/zsh-replace-multiple-dots'
 
 
 typeset -U path PATH
