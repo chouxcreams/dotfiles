@@ -23,6 +23,7 @@ mkdir -p "$XDG_CACHE_HOME"/pg
 ln -sfv "$DOTPATH"/.config/git "$XDG_CONFIG_HOME"
 ln -sfv "$DOTPATH"/.config/nano "$XDG_CONFIG_HOME"
 ln -sfv "$DOTPATH"/.config/micro "$XDG_CONFIG_HOME"
+ln -sfv "$DOTPATH"/.config/bat "$XDG_CONFIG_HOME"
 ln -sfv "$DOTPATH"/.config/starship.toml "$XDG_CONFIG_HOME"/starship.toml
 mkdir -p "$XDG_CONFIG_HOME"/latexmk
 ln -sfv "$DOTPATH"/.config/latexmk/latexmkrc "$XDG_CONFIG_HOME"/latexmk/latexmkrc
