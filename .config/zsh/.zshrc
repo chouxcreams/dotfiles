@@ -112,7 +112,7 @@ path=(
     $HOME/.anyenv/bin(N-/)
     $CARGO_HOME/bin(N-/)
     $GOPATH/bin(N-/)
-    $ZDOTDIR/git-subcommand(N-/)
+    $XDG_CONFIG_HOME/git/subcommand(N-/)
     $VOLTA_HOME/bin(N-/)
     $HOME/.poetry/bin(N-/)
     $path
