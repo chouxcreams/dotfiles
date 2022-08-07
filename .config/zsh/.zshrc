@@ -65,7 +65,7 @@ export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 
 ### Elm ###
-# IntelliJのElmプラグインがELM_HOMEに対応してるため使わない
+# IntelliJのElmプラグインがELM_HOMEに対応していないため使わない
 # export ELM_HOME="$XDG_CONFIG_HOME"/elm
 
 ### Golang ###
@@ -131,7 +131,7 @@ alias ls='lsd'
 alias nano='nano -i -m'
 alias reshell='exec $SHELL -l' #shellの再起動
 alias rlang='/usr/local/bin/r'
-alias cdgr='cd-gitroot'
+alias gd='cd-gitroot'
 alias cd='z'
 alias pathls='echo $PATH | sed -e "s/:/\n/g"'
 alias e='$EDITOR'
