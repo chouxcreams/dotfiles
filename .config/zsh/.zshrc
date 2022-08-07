@@ -58,6 +58,7 @@ export PIPENV_VENV_IN_PROJECT=true
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND='fd --type f'
 export FZF_ALT_C_COMMAND='fd --type d'
+export BAT_CONFIG_PATH="$XDG_CONFIG_HOME"/bat/bat.conf
 
 ### aws-cli ###
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
