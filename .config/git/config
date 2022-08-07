@@ -1,3 +1,6 @@
+[include]
+    path = local.conf
+
 [pager]
     diff = delta
     log = delta
