@@ -76,6 +76,9 @@ export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 ### Golang ###
 export GOPATH="$XDG_DATA_HOME"/go
 
+### Gradle ###
+export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
+
 ### Rust ###
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
