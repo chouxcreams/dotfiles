@@ -90,6 +90,9 @@ export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME"/bundle
 export BUNDLE_USER_CACHE="$XDG_CACHE_HOME"/bundle
 export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
 
+### navi ###
+export NAVI_CONFIG="$XDG_CONFIG_HOME"/navi/config.yaml
+
 ### Node.js ###
 export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 
@@ -113,6 +116,9 @@ export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
 
 ### Starship ###
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship.toml
+
+### wget ###
+export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 
 ### Pathの設定
 path=(
