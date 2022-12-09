@@ -26,4 +26,5 @@ ln -sfv "$DOTPATH"/.config/micro "$XDG_CONFIG_HOME"
 ln -sfv "$DOTPATH"/.config/bat "$XDG_CONFIG_HOME"
 ln -sfv "$DOTPATH"/.config/starship.toml "$XDG_CONFIG_HOME"/starship.toml
 ln -sfv "$DOTPATH"/.config/latexmk "$XDG_CONFIG_HOME"
+ln -sfv "$DOTPATH"/.config/navi "$XDG_CONFIG_HOME"
 ln -sfv "$XDG_CONFIG_HOME/zsh/.zshenv" "$HOME/.zshenv"
