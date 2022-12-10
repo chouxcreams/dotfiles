@@ -125,8 +125,10 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 
 ### zoxide ###
 export _ZO_DATA_DIR="$XDG_DATA_HOME/zoxide"
-eval "$(zoxide init zsh)"
-
+if (( ${+commands[zoxide]} )); then
+    alias cd='z'
+    eval "$(zoxide init zsh)"
+fi
 ### Pathの設定
 path=(
     $HOME/Library/Android/sdk(N-/)
@@ -153,7 +155,6 @@ alias nano='nano -i -m'
 alias reshell='exec $SHELL -l' #shellの再起動
 alias rlang='/usr/local/bin/r'
 alias gd='cd-gitroot'
-alias cd='z'
 alias pathls='echo $PATH | sed -e "s/:/\n/g"'
 alias e='$EDITOR'
 
