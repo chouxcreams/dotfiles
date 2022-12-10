@@ -54,12 +54,12 @@ setopt magic_equal_subst
 
 #### 環境変数の設定 ####
 export LANG=ja_JP.UTF-8
-export EDITOR=micro
+export EDITOR=nano
+(( ${+commands[micro]} )) && EDITOR=micro
 export PIPENV_VENV_IN_PROJECT=true
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND='fd --type f'
 export FZF_ALT_C_COMMAND='fd --type d'
-export BAT_CONFIG_PATH="$XDG_CONFIG_HOME"/bat/bat.conf
 
 ### anyenv ###
 export ANYENV_ROOT="$XDG_DATA_HOME"/anyenv
@@ -68,6 +68,9 @@ eval "$(anyenv init -)"
 ### aws-cli ###
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
+
+### bat ###
+export BAT_CONFIG_PATH="$XDG_CONFIG_HOME"/bat/bat.conf
 
 ### Elm ###
 # IntelliJのElmプラグインがELM_HOMEに対応していないため使わない
