@@ -69,6 +69,10 @@ export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 ### bat ###
 export BAT_CONFIG_PATH="$XDG_CONFIG_HOME"/bat/bat.conf
 
+### Docker ###
+zinit ice wait lucid as"completion" has"docker"
+zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
+
 ### Elm ###
 # IntelliJのElmプラグインがELM_HOMEに対応していないため使わない
 # export ELM_HOME="$XDG_CONFIG_HOME"/elm
@@ -104,6 +108,8 @@ export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
 
 ### npm ###
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+zinit ice wait lucid as"completion" has"npm" mv"completion.sh -> _npm"
+zinit snippet https://github.com/npm/cli/blob/latest/lib/utils/completion.sh
 
 ### Volta ###
 export VOLTA_HOME="$XDG_DATA_HOME"/volta
@@ -122,6 +128,10 @@ export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
 
 ### Starship ###
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship.toml
+
+### task ###
+zinit ice wait lucid as"completion" has"task"
+zinit snippet https://github.com/go-task/task/blob/master/completion/zsh/_task
 
 ### wget ###
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
@@ -190,7 +200,7 @@ for file in `\fd .zsh $ZDOTDIR/rc --max-depth 1 --type f --type l`; do
     source $file
 done
 
-source $ZDOTDIR/rc/local.zsh
+[ -f $ZDOTDIR/rc/local.zsh ] && source $ZDOTDIR/rc/local.zsh
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$XDG_DATA_HOME/fig/shell/zshrc.post.zsh" ]] && . "$XDG_DATA_HOME/fig/shell/zshrc.post.zsh"
