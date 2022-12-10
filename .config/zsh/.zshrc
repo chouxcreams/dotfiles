@@ -120,6 +120,10 @@ export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship.toml
 ### wget ###
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 
+### zoxide ###
+export _ZO_DATA_DIR="$XDG_DATA_HOME/zoxide"
+eval "$(zoxide init zsh)"
+
 ### Pathの設定
 path=(
     $HOME/Library/Android/sdk(N-/)
@@ -159,7 +163,6 @@ autoload -Uz compinit && compinit -i
 eval "$(starship init zsh)"
 eval "$(gh completion -s zsh)"
 eval "$(direnv hook zsh)"
-eval "$(zoxide init zsh)"
 
 ssh-add -K ~/.ssh/id_rsa &> /dev/null
 
