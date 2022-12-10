@@ -57,9 +57,6 @@ export LANG=ja_JP.UTF-8
 export EDITOR=nano
 (( ${+commands[micro]} )) && EDITOR=micro
 export PIPENV_VENV_IN_PROJECT=true
-export FZF_DEFAULT_COMMAND='fd --type f'
-export FZF_CTRL_T_COMMAND='fd --type f'
-export FZF_ALT_C_COMMAND='fd --type d'
 
 ### anyenv ###
 export ANYENV_ROOT="$XDG_DATA_HOME"/anyenv
@@ -75,6 +72,12 @@ export BAT_CONFIG_PATH="$XDG_CONFIG_HOME"/bat/bat.conf
 ### Elm ###
 # IntelliJのElmプラグインがELM_HOMEに対応していないため使わない
 # export ELM_HOME="$XDG_CONFIG_HOME"/elm
+
+### fzf ###
+[ -f $XDG_DATA_HOME/fzf/fzf.zsh ] && source $XDG_DATA_HOME/fzf/fzf.zsh
+export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_CTRL_T_COMMAND='fd --type f'
+export FZF_ALT_C_COMMAND='fd --type d'
 
 ### Golang ###
 export GOPATH="$XDG_DATA_HOME"/go
@@ -169,8 +172,6 @@ eval "$(gh completion -s zsh)"
 eval "$(direnv hook zsh)"
 
 ssh-add -K ~/.ssh/id_rsa &> /dev/null
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # git add and commit
 # 引数にはコミットメッセージを入れる
