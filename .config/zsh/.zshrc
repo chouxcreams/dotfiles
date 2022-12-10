@@ -13,7 +13,7 @@ autoload -Uz _zinit
 ### End of Zinit's installer chunk
 
 # Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
+[[ -f "$XDG_DATA_HOME/fig/shell/zshrc.pre.zsh" ]] && . "$XDG_DATA_HOME/fig/shell/zshrc.pre.zsh"
 
 ### Zinitでプラグインを入れる
 zinit wait lucid blockf light-mode for \
@@ -192,4 +192,4 @@ done
 source $ZDOTDIR/rc/local.zsh
 
 # Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+[[ -f "$XDG_DATA_HOME/fig/shell/zshrc.post.zsh" ]] && . "$XDG_DATA_HOME/fig/shell/zshrc.post.zsh"
