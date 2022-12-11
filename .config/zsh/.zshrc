@@ -85,6 +85,11 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND='fd --type f'
 export FZF_ALT_C_COMMAND='fd --type d'
 
+### gibo ###
+export GIBO_BOILERPLATES="$XDG_DATA_HOME"/gitignore-boilerplates
+zinit ice wait lucid as"completion" has"gibo" mv"gibo-completion.zsh -> _gibo"
+zinit snippet https://github.com/simonwhitaker/gibo/blob/main/shell-completions/gibo-completion.zsh
+
 ### Golang ###
 export GOPATH="$XDG_DATA_HOME"/go
 
