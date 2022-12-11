@@ -129,6 +129,9 @@ export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
 
 ### Python ###
 export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonstartup.py
+export PYLINTHOME="$XDG_CACHE_HOME"/pylint
+export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
+export IPYTHONDIR="$XDG_CONFIG_HOME"/jupyter
 
 ### Starship ###
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship.toml
