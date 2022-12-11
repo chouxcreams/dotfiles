@@ -91,6 +91,11 @@ export GOPATH="$XDG_DATA_HOME"/go
 ### Gradle ###
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 
+### lsd ###
+(( ${+commands[lsd]} )) && alias ls='lsd'
+alias la='ls -a'
+alias ll='ls -la'
+
 ### MySQL ###
 export MYSQL_HISTFILE="$XDG_STATE_HOME"/mysql/mysql_history
 
@@ -169,8 +174,6 @@ export GCD_PATH="$HOME/dotfiles:$GCD_PATH"
 ### エイリアスの設定
 alias arduino='/Applications/Arduino.app/Contents/MacOS/Arduino'
 alias hex='hexyl'
-alias ll='lsd -la'
-alias ls='lsd'
 alias nano='nano -i -m'
 alias reshell='exec $SHELL -l' #shellの再起動
 alias rlang='/usr/local/bin/r'
