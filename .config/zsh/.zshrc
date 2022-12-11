@@ -91,6 +91,9 @@ export GOPATH="$XDG_DATA_HOME"/go
 ### Gradle ###
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 
+### less ###
+export LESSHISTFILE=-
+
 ### lsd ###
 (( ${+commands[lsd]} )) && alias ls='lsd'
 alias la='ls -a'
@@ -101,6 +104,9 @@ export MYSQL_HISTFILE="$XDG_STATE_HOME"/mysql/mysql_history
 
 ### navi ###
 export NAVI_CONFIG="$XDG_CONFIG_HOME"/navi/config.yaml
+
+### netrc ###
+export NETRC="$XDG_CONFIG_HOME"/netrc/.netrc
 
 ### Node.js ###
 export NODE_REPL_HISTORY="$XDG_STATE_HOME"/node/node_repl_history
@@ -148,7 +154,7 @@ zinit snippet https://github.com/go-task/task/blob/master/completion/zsh/_task
 export VOLTA_HOME="$XDG_DATA_HOME"/volta
 
 ### wget ###
-export WGETRC="$XDG_CONFIG_HOME/wgetrc"
+export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 
 ### zoxide ###
 export _ZO_DATA_DIR="$XDG_DATA_HOME/zoxide"
