@@ -60,7 +60,7 @@ export PIPENV_VENV_IN_PROJECT=true
 
 ### anyenv ###
 export ANYENV_ROOT="$XDG_DATA_HOME"/anyenv
-eval "$(anyenv init -)"
+(( ${+commands[anyenv]} )) && eval "$(anyenv init -)"
 
 ### aws-cli ###
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
@@ -70,6 +70,7 @@ export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 export BAT_CONFIG_PATH="$XDG_CONFIG_HOME"/bat/bat.conf
 
 ### Docker ###
+alias dcp='docker compose'
 zinit ice wait lucid as"completion" has"docker"
 zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 
@@ -146,7 +147,6 @@ fi
 path=(
     $HOME/Library/Android/sdk(N-/)
     $HOME/Library/Android/sdk/platform-tools(N-/)
-    $HOME/.anyenv/bin(N-/)
     $CARGO_HOME/bin(N-/)
     $GOPATH/bin(N-/)
     $XDG_CONFIG_HOME/git/subcommand(N-/)
@@ -160,7 +160,6 @@ export GCD_PATH="$HOME/dotfiles:$GCD_PATH"
 
 ### エイリアスの設定
 alias arduino='/Applications/Arduino.app/Contents/MacOS/Arduino'
-alias dcp='docker compose'
 alias hex='hexyl'
 alias ll='lsd -la'
 alias ls='lsd'
