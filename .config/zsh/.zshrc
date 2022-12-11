@@ -127,6 +127,9 @@ export PSQL_HISTORY="$XDG_CACHE_HOME/pg/psql_history"
 export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
 export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
 
+### Python ###
+export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonstartup.py
+
 ### Starship ###
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship.toml
 
