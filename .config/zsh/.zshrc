@@ -146,6 +146,9 @@ export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME"/bundle
 export BUNDLE_USER_CACHE="$XDG_CACHE_HOME"/bundle
 export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
 
+### sbt ###
+export SBT_OPTS="-ivy "$XDG_DATA_HOME"/ivy2 -sbt-dir "$XDG_DATA_HOME"/sbt"
+
 ### SQLite ###
 export SQLITE_HISTORY="$XDG_STATE_HOME"/sqlite/sqlite_history
 
