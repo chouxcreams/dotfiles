@@ -16,7 +16,11 @@ mkdir -p "$XDG_RUNTIME_DIR"
 ln -sfv "$DOTFILES_CONFIG_DIR"/zsh "$XDG_CONFIG_HOME"
 
 mkdir -p "$XDG_CONFIG_HOME"/zsh/completion
-mkdir -p "$XDG_CACHE_HOME"/pg
+mkdir -p "$XDG_STATE_HOME"/pg
+mkdir -p "$XDG_STATE_HOME"/node
+mkdir -p "$XDG_STATE_HOME"/mydql
+mkdir -p "$XDG_STATE_HOME"/sqlite
+mkdir -p "$XDG_STATE_HOME"/zsh
 
 # nanoのシンタックスハイライトをインストール
 # git clone https://github.com/scopatz/nanorc.git "$XDG_CONFIG_HOME"/nano/.nanorc

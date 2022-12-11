@@ -4,8 +4,8 @@ import atexit
 import readline
 import os
 
-xdg_cache_home = os.environ['XDG_CACHE_HOME']
-history_path = os.path.join(xdg_cache_home, 'python')
+xdg_state_home = os.environ['XDG_STATE_HOME']
+history_path = os.path.join(xdg_state_home, 'python')
 os.makedirs(history_path, exist_ok=True)
 history_file = os.path.join(history_path, '.python_history')
 

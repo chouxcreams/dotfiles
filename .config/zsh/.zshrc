@@ -54,6 +54,7 @@ setopt magic_equal_subst
 
 #### 環境変数の設定 ####
 export LANG=ja_JP.UTF-8
+export HISTFILE="$XDG_STATE_HOME"/zsh/history
 export EDITOR=nano
 (( ${+commands[micro]} )) && EDITOR=micro
 export PIPENV_VENV_IN_PROJECT=true
@@ -105,7 +106,7 @@ export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME"/bundle
 export NAVI_CONFIG="$XDG_CONFIG_HOME"/navi/config.yaml
 
 ### Node.js ###
-export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
+export NODE_REPL_HISTORY="$XDG_STATE_HOME"/node/node_repl_history
 
 ### npm ###
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
@@ -116,10 +117,10 @@ zinit snippet https://github.com/npm/cli/blob/latest/lib/utils/completion.sh
 export VOLTA_HOME="$XDG_DATA_HOME"/volta
 
 ### MySQL ###
-export MYSQL_HISTFILE="$XDG_DATA_HOME"/mysql_history
+export MYSQL_HISTFILE="$XDG_STATE_HOME"/mysql/mysql_history
 
 ### SQLite ###
-export SQLITE_HISTORY="$XDG_DATA_HOME"/sqlite_history
+export SQLITE_HISTORY="$XDG_STATE_HOME"/sqlite/sqlite_history
 
 ### PostgreSQL ###
 export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
