@@ -92,6 +92,7 @@ zinit snippet https://github.com/simonwhitaker/gibo/blob/main/shell-completions/
 
 ### Golang ###
 export GOPATH="$XDG_DATA_HOME"/go
+export GOENV_ROOT="$XDG_DATA_HOME"/goenv
 
 ### Gradle ###
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
