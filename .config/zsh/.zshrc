@@ -74,6 +74,12 @@ export BAT_CONFIG_PATH="$XDG_CONFIG_HOME"/bat/bat.conf
 zinit ice wait lucid as"completion" has"delta" mv"completion.zsh -> _delta"
 zinit snippet https://github.com/dandavison/delta/blob/master/etc/completion/completion.zsh
 
+### deno ###
+export DENO_DIR="$XDG_CACHE_HOME"/deno
+export DENO_INSTALL_ROOT="$XDG_DATA_HOME"/deno
+alias desk='deno task'
+alias drun='deno run'
+
 ### Docker ###
 alias dcp='docker compose'
 zinit ice wait lucid as"completion" has"docker"
@@ -181,6 +187,7 @@ path=(
     $HOME/Library/Android/sdk/platform-tools(N-/)
     $CARGO_HOME/bin(N-/)
     $GOPATH/bin(N-/)
+    $DENO_INSTALL_ROOT/bin(N-/)
     $XDG_CONFIG_HOME/git/subcommand(N-/)
     $VOLTA_HOME/bin(N-/)
     $HOME/.poetry/bin(N-/)
