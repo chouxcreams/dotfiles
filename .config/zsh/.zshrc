@@ -175,12 +175,16 @@ export VOLTA_HOME="$XDG_DATA_HOME"/volta
 ### wget ###
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 
+### zellij ###
+alias zel="zellij"
+
 ### zoxide ###
 export _ZO_DATA_DIR="$XDG_DATA_HOME/zoxide"
 if (( ${+commands[zoxide]} )); then
     alias cd='z'
     eval "$(zoxide init zsh)"
 fi
+
 ### Pathの設定
 path=(
     $HOME/Library/Android/sdk(N-/)
@@ -214,7 +218,7 @@ autoload -Uz compinit && compinit -i
 
 ### その他
 eval "$(starship init zsh)"
-eval "$(gh completion -s zsh)"
+# eval "$(gh completion -s zsh)"
 eval "$(direnv hook zsh)"
 
 ssh-add -K ~/.ssh/id_rsa &> /dev/null
