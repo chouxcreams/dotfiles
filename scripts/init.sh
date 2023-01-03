@@ -34,4 +34,5 @@ ln -sfv "$DOTFILES_CONFIG_DIR"/starship.toml "$XDG_CONFIG_HOME"/starship.toml
 ln -sfv "$DOTFILES_CONFIG_DIR"/latexmk "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/navi "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/python "$XDG_CONFIG_HOME"
+ln -sfv "$DOTFILES_CONFIG_DIR"/zellij "$XDG_CONFIG_HOME"
 ln -sfv "$XDG_CONFIG_HOME/zsh/.zshenv" "$HOME/.zshenv"

@@ -40,3 +40,15 @@ fadd() {
     unbuffer git status -s | fzf -m --ansi --preview="echo {} | awk '{print \$2}' | xargs unbuffer git diff" | awk '{print $2}' | xargs git add
     git config --local delta.side-by-side $default
 }
+
+za() {
+    local session
+    session=$(zellij list-sessions | fzf) &&
+    zellij attach $session
+}
+
+zk() {
+    local session
+    session=$(zellij list-sessions | fzf) &&
+    zellij kill-session $session
+}
