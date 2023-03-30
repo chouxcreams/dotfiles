@@ -119,7 +119,8 @@ alias ll='ls -la'
 export MYSQL_HISTFILE="$XDG_STATE_HOME"/mysql/mysql_history
 
 ### navi ###
-export NAVI_CONFIG="$XDG_CONFIG_HOME"/navi/config.yaml
+export NAVI_HOME="$XDG_CONFIG_HOME"/navi
+export NAVI_CONFIG="$NAVI_HOME"/config.yaml
 
 ### netrc ###
 export NETRC="$XDG_CONFIG_HOME"/netrc/.netrc
