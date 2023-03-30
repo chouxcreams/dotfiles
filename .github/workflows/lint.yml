@@ -1,24 +1,17 @@
 name: lint
-
 on:
   push:
-    branches: [ main ]
-
+    branches: [main]
 jobs:
   lint-check:
     runs-on: macos-latest
-
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Install required packages
-      run: brew install shellcheck
-
-    - name: Check Scripts
-      run: shellcheck ${GITHUB_WORKSPACE}/scripts/*.sh
-
-    - name: Check Temporary Scripts
-      run: shellcheck ${GITHUB_WORKSPACE}/scripts/tmp/*.sh
-
-    - name: Check Git Subcommands
-      run: shellcheck ${GITHUB_WORKSPACE}/.config/git/subcommand/git-*
+      - uses: actions/checkout@v2
+      - name: Install required packages
+        run: brew install shellcheck
+      - name: Check Scripts
+        run: shellcheck ${GITHUB_WORKSPACE}/scripts/*.sh
+      - name: Check Temporary Scripts
+        run: shellcheck ${GITHUB_WORKSPACE}/scripts/tmp/*.sh
+      - name: Check Git Subcommands
+        run: shellcheck ${GITHUB_WORKSPACE}/.config/git/subcommand/git-*

@@ -1,39 +1,33 @@
 name: macos
-
 on:
   push:
-    branches: [ main ]
-
+    branches: [main]
 jobs:
   macos-test:
     strategy:
       matrix:
         os: [macos-10.15, macos-11, macos-12]
-
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - name: Copy the directory
+        run: mkdir ${HOME}/dotfiles && cp -r ${GITHUB_WORKSPACE}/ ${HOME}/dotfiles/
+      - name: Run init.sh
+        run: make init
+      - name: Setup macOS defaults config
+        run: make macos
 
-    - name: Copy the directory
-      run: mkdir ${HOME}/dotfiles && cp -r ${GITHUB_WORKSPACE}/ ${HOME}/dotfiles/
+# - name: Load .zshenv
+#   run: |
+#     zsh ~/.zshenv 2> error.log; cat error.log
+#     if [ -s error.log ]; then false; fi
 
-    - name: Run init.sh
-      run: make init
+# - name: Load .zprofile
+#   run: |
+#     zsh ${ZDOTDIR}/.zprofile 2> error.log; cat error.log
+#     if [ -s error.log ]; then false; fi
 
-    - name: Setup macOS defaults config
-      run: make macos
-
-    # - name: Load .zshenv
-    #   run: |
-    #     zsh ~/.zshenv 2> error.log; cat error.log
-    #     if [ -s error.log ]; then false; fi
-
-    # - name: Load .zprofile
-    #   run: |
-    #     zsh ${ZDOTDIR}/.zprofile 2> error.log; cat error.log
-    #     if [ -s error.log ]; then false; fi
-
-    # - name: Load .zshrc
-    #   run: |
-    #     zsh ${ZDOTDIR}/.zshrc 2> error.log; cat error.log
-    #     if [ -s error.log ]; then false; f
+# - name: Load .zshrc
+#   run: |
+#     zsh ${ZDOTDIR}/.zshrc 2> error.log; cat error.log
+#     if [ -s error.log ]; then false; f

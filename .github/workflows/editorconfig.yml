@@ -1,7 +1,7 @@
 name: Editorconfig-checker
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 jobs:
   lint:
     runs-on: ubuntu-22.04
