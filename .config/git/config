@@ -17,3 +17,5 @@
 [alias]
     sc = switch -c
     po = push --set-upstream origin HEAD
+[pull]
+	rebase = false

@@ -46,3 +46,11 @@ indent_size = 2
 [*.sql]
 indent_style = space
 indent_size = 2
+
+[deno.lock]
+indent_style = space
+indent_size = 2
+
+[*.xml]
+indent_style = space
+indent_size = 2
