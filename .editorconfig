@@ -54,3 +54,7 @@ indent_size = 2
 [*.xml]
 indent_style = space
 indent_size = 2
+
+[config]
+indent_style = tab
+indent_size = 4

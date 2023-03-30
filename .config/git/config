@@ -1,21 +1,21 @@
 [include]
-    path = local.conf
+	path = local.conf
 
 [pager]
-    diff = delta
-    log = delta
-    reflog = delta
-    show = delta
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta
 
 [delta]
-    navigate = true
-    side-by-side = true
+	navigate = true
+	side-by-side = true
 
 [interactive]
-    diffFilter = delta --color-only
+	diffFilter = delta --color-only
 
 [alias]
-    sc = switch -c
-    po = push --set-upstream origin HEAD
+	sc = switch -c
+	po = push --set-upstream origin HEAD
 [pull]
 	rebase = false
