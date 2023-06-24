@@ -215,6 +215,7 @@ alias rlang='/usr/local/bin/r'
 alias gd='cd-gitroot'
 alias pathls='echo $PATH | sed -e "s/:/\n/g"'
 alias e='$EDITOR'
+alias editorconfig-gen='cp $DOTFILES_DIR/.editorconfig .' # editorconfigファイルの生成
 
 
 ### gitやdockerの補完の設定
