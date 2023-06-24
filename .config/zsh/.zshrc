@@ -133,6 +133,9 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 zinit ice wait lucid as"completion" has"npm" mv"completion.sh -> _npm"
 zinit snippet https://github.com/npm/cli/blob/latest/lib/utils/completion.sh
 
+### Poetry ###
+export POETRY_HOME="$XDG_DATA_HOME/poetry"
+
 ### PostgreSQL ###
 export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
 export PSQL_HISTORY="$XDG_STATE_HOME/pg/psql_history"
@@ -140,7 +143,7 @@ export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
 export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
 
 ### Python ###
-export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonstartup.py
+# export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonstartup.py
 export PYLINTHOME="$XDG_CACHE_HOME"/pylint
 export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
 export IPYTHONDIR="$XDG_CONFIG_HOME"/jupyter
@@ -195,6 +198,7 @@ path=(
     $DENO_INSTALL_ROOT/bin(N-/)
     $XDG_CONFIG_HOME/git/subcommand(N-/)
     $VOLTA_HOME/bin(N-/)
+    $POETRY_HOME/bin(N-/)
     $HOME/.poetry/bin(N-/)
     $path
 )
