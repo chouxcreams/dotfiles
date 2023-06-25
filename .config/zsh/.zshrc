@@ -100,6 +100,12 @@ export GIBO_BOILERPLATES="$XDG_DATA_HOME"/gitignore-boilerplates
 zinit ice wait lucid as"completion" has"gibo" mv"gibo-completion.zsh -> _gibo"
 zinit snippet https://github.com/simonwhitaker/gibo/blob/main/shell-completions/gibo-completion.zsh
 
+### gmailctl ###
+if (( ${+commands[gmailctl]} )) then;
+    alias gmailctl='gmailctl --config $XDG_CONFIG_HOME/.gmailctl'
+    alias gctl='gmailctl'
+fi
+
 ### Golang ###
 export GOPATH="$XDG_DATA_HOME"/go
 export GOENV_ROOT="$XDG_DATA_HOME"/goenv
