@@ -19,7 +19,7 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 
-[*.{json,jsonc,jsonnet}]
+[*.{json,jsonc,jsonnet,libsonnet}]
 indent_style = space
 indent_size = 2
 
