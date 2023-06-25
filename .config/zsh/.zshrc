@@ -102,7 +102,7 @@ zinit snippet https://github.com/simonwhitaker/gibo/blob/main/shell-completions/
 
 ### gmailctl ###
 if (( ${+commands[gmailctl]} )) then;
-    alias gmailctl='gmailctl --config $XDG_CONFIG_HOME/.gmailctl'
+    alias gmailctl='gmailctl --config $XDG_CONFIG_HOME/gmailctl'
     alias gctl='gmailctl'
 fi
 
