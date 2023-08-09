@@ -1,17 +1,3 @@
-### Added by Zinit's installer
-if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
-    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
-    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
-    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
-        print -P "%F{33} %F{34}Installation successful.%f%b" || \
-        print -P "%F{160} The clone has failed.%f%b"
-fi
-
-source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
-### End of Zinit's installer chunk
-
 # Fig pre block. Keep at the top of this file.
 [[ -f "$XDG_DATA_HOME/fig/shell/zshrc.pre.zsh" ]] && . "$XDG_DATA_HOME/fig/shell/zshrc.pre.zsh"
 
@@ -66,8 +52,6 @@ export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 export BAT_CONFIG_PATH="$XDG_CONFIG_HOME"/bat/bat.conf
 
 ### delta ###
-zinit ice wait lucid as"completion" has"delta" mv"completion.zsh -> _delta"
-zinit snippet https://github.com/dandavison/delta/blob/master/etc/completion/completion.zsh
 
 ### deno ###
 export DENO_DIR="$XDG_CACHE_HOME"/deno
@@ -77,8 +61,6 @@ alias drun='deno run'
 
 ### Docker ###
 alias dcp='docker compose'
-zinit ice wait lucid as"completion" has"docker"
-zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 
 ### Elm ###
 # IntelliJのElmプラグインがELM_HOMEに対応していないため使わない
@@ -92,8 +74,6 @@ export FZF_ALT_C_COMMAND='fd --type d'
 
 ### gibo ###
 export GIBO_BOILERPLATES="$XDG_DATA_HOME"/gitignore-boilerplates
-zinit ice wait lucid as"completion" has"gibo" mv"gibo-completion.zsh -> _gibo"
-zinit snippet https://github.com/simonwhitaker/gibo/blob/main/shell-completions/gibo-completion.zsh
 
 ### gmailctl ###
 if (( ${+commands[gmailctl]} )) then;
@@ -131,8 +111,6 @@ export NODE_REPL_HISTORY="$XDG_STATE_HOME"/node/node_repl_history
 
 ### npm ###
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
-zinit ice wait lucid as"completion" has"npm" mv"completion.sh -> _npm"
-zinit snippet https://github.com/npm/cli/blob/latest/lib/utils/completion.sh
 
 ### Poetry ###
 export POETRY_HOME="$XDG_DATA_HOME/poetry"
@@ -171,8 +149,6 @@ export SQLITE_HISTORY="$XDG_STATE_HOME"/sqlite/sqlite_history
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship.toml
 
 ### task ###
-zinit ice wait lucid as"completion" has"task"
-zinit snippet https://github.com/go-task/task/blob/master/completion/zsh/_task
 
 ### Volta ###
 export VOLTA_HOME="$XDG_DATA_HOME"/volta
