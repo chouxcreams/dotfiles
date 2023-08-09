@@ -32,6 +32,16 @@ github = "mollifier/cd-gitroot"
 apply = ["defer"]
 github = "momo-lab/zsh-replace-multiple-dots"
 
+[plugins.local-defer]
+apply = ["defer"]
+local = "~/.config/zsh/plugins/defer"
+use = ["*.zsh"]
+
+[plugins.local-sync]
+apply = ["source"]
+local = "~/.config/zsh/plugins/sync"
+use = ["*.zsh"]
+
 ### completions
 [plugins.delta-completions]
 apply = ["fpath"]

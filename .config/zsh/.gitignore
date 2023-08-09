@@ -7,7 +7,10 @@
 !/.zshrc
 !/.zprofile
 !/.zshenv
-!/rc
-!/rc/*
+!/plugins
+!/plugins/defer
+!/plugins/defer/**
+!/plugins/sync
+!/plugins/sync/**
 !/sheldon
 !/sheldon/plugins.toml
