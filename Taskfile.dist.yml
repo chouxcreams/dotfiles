@@ -9,6 +9,7 @@ tasks:
     cmds:
       - task: init
       - task: completions
+      - task: sheldon
   completions:
     cmds:
       - ./scripts/completion.zsh
@@ -16,3 +17,9 @@ tasks:
       - ./scripts/completion.zsh
     generates:
       - "$XDG_DATA_HOME/zsh/completions/*"
+  sheldon:
+    cmds:
+      - sheldon lock --reinstall
+    sources:
+      - ./.config/zsh/plugins/defer/*
+      - ./.config/zsh/plugins/sync/*
