@@ -12,20 +12,8 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
-eval "$(sheldon source)"
-
 # Fig pre block. Keep at the top of this file.
 [[ -f "$XDG_DATA_HOME/fig/shell/zshrc.pre.zsh" ]] && . "$XDG_DATA_HOME/fig/shell/zshrc.pre.zsh"
-
-### Zinitでプラグインを入れる
-# zinit wait lucid blockf light-mode for \
-#     @'zsh-users/zsh-autosuggestions' \
-#     @'zsh-users/zsh-completions' \
-#     @'zdharma-continuum/fast-syntax-highlighting' \
-#     @'paulirish/git-open' \
-#     @'mollifier/cd-gitroot' \
-#     @'momo-lab/zsh-replace-multiple-dots'
-
 
 typeset -U path PATH
 
@@ -37,6 +25,11 @@ path=(
     /usr/local/bin(N-/)
     $path
 )
+
+### プラグインの読み込み
+### homebrewのbinにpathを通してから
+eval "$(sheldon source)"
+
 if (( $+commands[sw_vers] )) && (( $+commands[arch] )); then
     [[ -x /usr/local/bin/brew ]] && alias brewed="arch -arch x86_64 /usr/local/bin/brew"
     alias x64='exec arch -x86_64 /bin/zsh'
