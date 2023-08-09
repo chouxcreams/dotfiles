@@ -1,23 +1,35 @@
 shell = "zsh"
 
+[plugins.zsh-defer]
+github = "romkatv/zsh-defer"
+
+[templates]
+defer = "{{ hooks | get: \"pre\" | nl }}{% for file in files %}zsh-defer source \"{{ file }}\"\n{% endfor %}{{ hooks | get: \"post\" | nl }}"
+
 ### plugins
 [plugins]
 [plugins.zsh-autosuggestions]
+apply = ["defer"]
 github = "zsh-users/zsh-autosuggestions"
 
 [plugins.zsh-completions]
+apply = ["defer"]
 github = "zsh-users/zsh-completions"
 
 [plugins.fast-syntax-highlighting]
+apply = ["defer"]
 github = "zdharma-continuum/fast-syntax-highlighting"
 
 [plugins.git-open]
+apply = ["defer"]
 github = "paulirish/git-open"
 
 [plugins.cd-gitroot]
+apply = ["defer"]
 github = "mollifier/cd-gitroot"
 
 [plugins.zsh-replace-multiple-dots]
+apply = ["defer"]
 github = "momo-lab/zsh-replace-multiple-dots"
 
 ### completions
