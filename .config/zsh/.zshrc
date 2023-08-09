@@ -12,17 +12,19 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+eval "$(sheldon source)"
+
 # Fig pre block. Keep at the top of this file.
 [[ -f "$XDG_DATA_HOME/fig/shell/zshrc.pre.zsh" ]] && . "$XDG_DATA_HOME/fig/shell/zshrc.pre.zsh"
 
 ### Zinitでプラグインを入れる
-zinit wait lucid blockf light-mode for \
-    @'zsh-users/zsh-autosuggestions' \
-    @'zsh-users/zsh-completions' \
-    @'zdharma-continuum/fast-syntax-highlighting' \
-    @'paulirish/git-open' \
-    @'mollifier/cd-gitroot' \
-    @'momo-lab/zsh-replace-multiple-dots'
+# zinit wait lucid blockf light-mode for \
+#     @'zsh-users/zsh-autosuggestions' \
+#     @'zsh-users/zsh-completions' \
+#     @'zdharma-continuum/fast-syntax-highlighting' \
+#     @'paulirish/git-open' \
+#     @'mollifier/cd-gitroot' \
+#     @'momo-lab/zsh-replace-multiple-dots'
 
 
 typeset -U path PATH

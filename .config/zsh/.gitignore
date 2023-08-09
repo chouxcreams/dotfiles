@@ -9,3 +9,5 @@
 !/.zshenv
 !/rc
 !/rc/*
+!/sheldon
+!/sheldon/plugins.toml
