@@ -28,3 +28,7 @@ remote = "https://raw.githubusercontent.com/dandavison/delta/master/etc/completi
 [plugins.task-completions]
 apply = ["fpath"]
 remote = "https://raw.githubusercontent.com/go-task/task/main/completion/zsh/_task"
+
+[plugins.local-completions]
+apply = ["fpath"]
+local = "~/.local/share/zsh/completions"

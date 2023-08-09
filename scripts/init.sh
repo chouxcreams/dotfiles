@@ -15,7 +15,8 @@ mkdir -p "$XDG_RUNTIME_DIR"
 
 ln -sfv "$DOTFILES_CONFIG_DIR"/zsh "$XDG_CONFIG_HOME"
 
-mkdir -p "$XDG_CONFIG_HOME"/zsh/completion
+mkdir -p "$XDG_DATA_HOME"/zsh
+mkdir -p "$XDG_DATA_HOME"/zsh/completions
 mkdir -p "$XDG_STATE_HOME"/pg
 mkdir -p "$XDG_STATE_HOME"/node
 mkdir -p "$XDG_STATE_HOME"/mydql

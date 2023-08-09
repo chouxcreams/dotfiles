@@ -1,0 +1,18 @@
+version: "3"
+tasks:
+  init:
+    sources:
+      - ./scripts/init.sh
+    cmds:
+      - ./scripts/init.sh
+  update:
+    cmds:
+      - task: init
+      - task: completions
+  completions:
+    cmds:
+      - ./scripts/completion.zsh
+    sources:
+      - ./scripts/completion.zsh
+    generates:
+      - "$XDG_DATA_HOME/zsh/completions/*"
