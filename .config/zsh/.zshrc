@@ -6,6 +6,7 @@ typeset -U path PATH
 path=(
     /opt/homebrew/bin(N-/)
     /usr/local/bin(N-/)
+    /home/linuxbrew/.linuxbrew/bin(N-/)
     $path
 )
 
