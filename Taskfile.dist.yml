@@ -1,17 +1,17 @@
 version: "3"
 tasks:
-  init:
+  symlink:
     sources:
-      - ./scripts/init.sh
+      - ./scripts/symlink.sh
     cmds:
-      - ./scripts/init.sh
+      - ./scripts/symlink.sh
   pull:
     cmds:
       - git pull origin main
       - task: update
   update:
     cmds:
-      - task: init
+      - task: symlink
       - task: completions
       - task: sheldon
       - task: brew

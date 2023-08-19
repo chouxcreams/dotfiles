@@ -1,5 +1,5 @@
 init:
-	bash ./scripts/init.sh
+	bash ./scripts/symlink.sh
 
 dropbox:
 	bash ./scripts/dropbox.sh
