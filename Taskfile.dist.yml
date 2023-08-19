@@ -5,11 +5,16 @@ tasks:
       - ./scripts/init.sh
     cmds:
       - ./scripts/init.sh
+  pull:
+    cmds:
+      - git pull origin main
+      - task: update
   update:
     cmds:
       - task: init
       - task: completions
       - task: sheldon
+      - task: brew
   completions:
     cmds:
       - ./scripts/completion.zsh
@@ -23,3 +28,8 @@ tasks:
     sources:
       - ./.config/zsh/plugins/defer/*
       - ./.config/zsh/plugins/sync/*
+  brew:
+    cmds:
+      - brew bundle --file=./.config/Brewfile
+    sources:
+      - ./.config/Brewfile
