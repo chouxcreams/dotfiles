@@ -2,15 +2,15 @@
 	path = local.conf
 
 [user]
-	name = chouxcreams
+	name = shutarou takayama
 	email = 40602023+chouxcreams@users.noreply.github.com
-    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHogLrYxGcHX8BxVTBW25K8VLMixxlC8vQxmfyugY5oU
-	
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHogLrYxGcHX8BxVTBW25K8VLMixxlC8vQxmfyugY5oU
+
 [gpg]
-    format = ssh
+	format = ssh
 
 [commit]
-    gpgsign = true
+	gpgsign = true
 
 [pager]
 	diff = delta
