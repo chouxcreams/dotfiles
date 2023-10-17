@@ -17,9 +17,9 @@ tasks:
       - ./scripts/symlink.sh
   brew:
     cmds:
-      - brew bundle --file=./.config/homebrew/Brewfile
+      - brew bundle --file=$XDG_CONFIG_HOME/homebrew/Brewfile
     sources:
-      - ./.config/homebrew/Brewfile
+      - $XDG_CONFIG_HOME/homebrew/Brewfile
   completions:
     cmds:
       - ./scripts/completion.zsh
@@ -31,5 +31,5 @@ tasks:
     cmds:
       - sheldon lock --reinstall
     sources:
-      - ./.config/zsh/plugins/defer/*
-      - ./.config/zsh/plugins/sync/*
+      - $XDG_CONFIG_HOME/zsh/plugins/defer/*
+      - $XDG_CONFIG_HOME/zsh/plugins/sync/*
