@@ -143,7 +143,6 @@ path=(
     $XDG_CONFIG_HOME/git/subcommand(N-/)
     $VOLTA_HOME/bin(N-/)
     $POETRY_HOME/bin(N-/)
-    $HOME/.poetry/bin(N-/)
     $path
 )
 
