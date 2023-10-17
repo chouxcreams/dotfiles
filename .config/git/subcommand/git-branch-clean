@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# コマンドライン引数からプレフィックスを取得する
+prefix=$1
+
+# プレフィックスが指定されていない場合、エラーメッセージを表示して終了する
+if [ -z "$prefix" ]; then
+    echo "Error: No prefix specified."
+    exit 1
+fi
+
+# プレフィックスから始まるブランチ名のリストを取得し、ループ処理する
+for branch_name in $(git branch --list "${prefix}/*"); do
+    # ローカルブランチを削除する
+    git branch -D $branch_name
+done

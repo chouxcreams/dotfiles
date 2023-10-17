@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# GitHubリポジトリを最新の状態に更新
+git fetch origin
+
+# マージ済みのブランチ一覧を表示
+for branch in $(git branch --merged | grep -v "\*"); do
+    echo $branch
+done
