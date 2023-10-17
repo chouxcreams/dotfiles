@@ -30,6 +30,6 @@ tasks:
       - ./.config/zsh/plugins/sync/*
   brew:
     cmds:
-      - brew bundle --file=./.config/Brewfile
+      - brew bundle --file=./.config/homebrew/Brewfile
     sources:
-      - ./.config/Brewfile
+      - ./.config/homebrew/Brewfile
