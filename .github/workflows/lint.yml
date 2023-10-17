@@ -14,4 +14,4 @@ jobs:
       - name: Check Temporary Scripts
         run: shellcheck ${GITHUB_WORKSPACE}/scripts/tmp/*.sh
       - name: Check Git Subcommands
-        run: shellcheck ${GITHUB_WORKSPACE}/.config/git/subcommand/git-*
+        run: shellcheck ${GITHUB_WORKSPACE}/config/git/subcommand/git-*
