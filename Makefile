@@ -1,5 +1,5 @@
 init:
-	bash ./scripts/symlink.sh
+	brew install go-task && task update
 
 dropbox:
 	bash ./scripts/dropbox.sh
