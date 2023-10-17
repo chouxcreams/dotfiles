@@ -31,3 +31,10 @@ tasks:
       - ./scripts/completion.zsh
     generates:
       - "$XDG_DATA_HOME/zsh/completions/*"
+  benchmark:
+    desc: "zshの起動時間を計測する"
+    silent: true
+    preconditions:
+      - sh: command -v hyperfine
+        msg: "hyperfineがインストールされていません"
+    cmd: hyperfine -w 5 -r 50 -i 'zsh -i -c exit'
