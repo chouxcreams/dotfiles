@@ -13,7 +13,7 @@ path=(
 
 ### プラグインの読み込み
 ### homebrewのbinにpathを通してから
-eval "$(sheldon source)"
+source "$XDG_CACHE_HOME"/sheldon/source
 
 autoload -Uz compinit && compinit -i
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION

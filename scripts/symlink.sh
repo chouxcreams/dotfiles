@@ -23,6 +23,7 @@ mkdir -p "$XDG_STATE_HOME"/mydql
 mkdir -p "$XDG_STATE_HOME"/sqlite
 mkdir -p "$XDG_STATE_HOME"/zsh
 mkdir -p "$XDG_CONFIG_HOME"/wakatime
+mkdir -p "$XDG_CACHE_HOME"/sheldon
 
 # nanoのシンタックスハイライトをインストール
 # git clone https://github.com/scopatz/nanorc.git "$XDG_CONFIG_HOME"/nano/.nanorc

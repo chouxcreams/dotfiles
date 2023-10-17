@@ -30,6 +30,7 @@ tasks:
   sheldon:
     cmds:
       - sheldon lock --reinstall
+      - sheldon source > ~/.cache/sheldon/source
     sources:
       - ./config/zsh/plugins/defer/*
       - ./config/zsh/plugins/sync/*
