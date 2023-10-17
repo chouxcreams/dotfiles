@@ -4,6 +4,8 @@ on:
     branches: [main]
 jobs:
   macos-test:
+    env:
+      XDG_CONFIG_HOME: ${{ github.workspace }}/.config
     strategy:
       matrix:
         os: [macos-11, macos-12, macos-13]
