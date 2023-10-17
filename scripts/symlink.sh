@@ -22,6 +22,7 @@ mkdir -p "$XDG_STATE_HOME"/node
 mkdir -p "$XDG_STATE_HOME"/mydql
 mkdir -p "$XDG_STATE_HOME"/sqlite
 mkdir -p "$XDG_STATE_HOME"/zsh
+mkdir -p "$XDG_CONFIG_HOME"/wakatime
 
 # nanoのシンタックスハイライトをインストール
 # git clone https://github.com/scopatz/nanorc.git "$XDG_CONFIG_HOME"/nano/.nanorc
@@ -38,6 +39,6 @@ ln -sfv "$DOTFILES_CONFIG_DIR"/python "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/zellij "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/sheldon "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/1password "$XDG_CONFIG_HOME"
-ln -sfv "$DOTFILES_CONFIG_DIR"/homebrew "$XDG_CONFIG_HOME"/homebrew
+ln -sfv "$DOTFILES_CONFIG_DIR"/homebrew "$XDG_CONFIG_HOME"
 ln -sfv "$XDG_CONFIG_HOME/zsh/.zshenv" "$HOME/.zshenv"
 ln -sfv "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock" "$XDG_CONFIG_HOME/1password/agent.sock"

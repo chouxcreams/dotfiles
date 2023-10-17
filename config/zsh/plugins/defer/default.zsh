@@ -126,6 +126,9 @@ export VOLTA_HOME="$XDG_DATA_HOME"/volta
 ### wget ###
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 
+### wakatime ###
+export WAKATIME_HOME="$XDG_CONFIG_HOME"/wakatime
+
 ### zellij ###
 alias zel="zellij"
 
