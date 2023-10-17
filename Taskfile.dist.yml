@@ -1,10 +1,5 @@
 version: "3"
 tasks:
-  symlink:
-    sources:
-      - ./scripts/symlink.sh
-    cmds:
-      - ./scripts/symlink.sh
   pull:
     cmds:
       - git pull origin main
@@ -12,9 +7,19 @@ tasks:
   update:
     cmds:
       - task: symlink
+      - task: brew
       - task: completions
       - task: sheldon
-      - task: brew
+  symlink:
+    sources:
+      - ./scripts/symlink.sh
+    cmds:
+      - ./scripts/symlink.sh
+  brew:
+    cmds:
+      - brew bundle --file=./.config/homebrew/Brewfile
+    sources:
+      - ./.config/homebrew/Brewfile
   completions:
     cmds:
       - ./scripts/completion.zsh
@@ -28,8 +33,3 @@ tasks:
     sources:
       - ./.config/zsh/plugins/defer/*
       - ./.config/zsh/plugins/sync/*
-  brew:
-    cmds:
-      - brew bundle --file=./.config/homebrew/Brewfile
-    sources:
-      - ./.config/homebrew/Brewfile
