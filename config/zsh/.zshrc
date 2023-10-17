@@ -10,12 +10,14 @@ path=(
     $path
 )
 
+
 ### プラグインの読み込み
 ### homebrewのbinにpathを通してから
 eval "$(sheldon source)"
 
-### gitやdockerの補完の設定
 autoload -Uz compinit && compinit -i
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
+zstyle ':completion:*' cache-path $XDG_CACHE_HOME/zsh/zcompcache-$ZSH_VERSION
 
 ssh-add -K ~/.ssh/id_rsa &> /dev/null
 
