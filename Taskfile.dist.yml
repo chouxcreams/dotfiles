@@ -31,5 +31,5 @@ tasks:
     cmds:
       - sheldon lock --reinstall
     sources:
-      - $XDG_CONFIG_HOME/zsh/plugins/defer/*
-      - $XDG_CONFIG_HOME/zsh/plugins/sync/*
+      - ./config/zsh/plugins/defer/*
+      - ./config/zsh/plugins/sync/*
