@@ -1,7 +1,7 @@
 #! /bin/bash -e
 
 DOTFILES_DIR="$HOME"/dotfiles
-DOTFILES_CONFIG_DIR="$DOTFILES_DIR"/.config
+DOTFILES_CONFIG_DIR="$DOTFILES_DIR"/config
 XDG_CONFIG_HOME="$HOME"/.config
 XDG_DATA_HOME="$HOME"/.local/share
 XDG_STATE_HOME="$HOME"/.local/state
