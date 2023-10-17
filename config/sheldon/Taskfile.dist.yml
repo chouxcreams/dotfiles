@@ -1,0 +1,24 @@
+version: "3"
+tasks:
+  update:
+    desc: "sheldonを更新する"
+    cmds:
+      - task: lock
+      - task: cache
+  lock:
+    desc: "sheldonをロックする"
+    cmds:
+      - sheldon lock --reinstall
+    sources:
+      - ./config/zsh/plugins/defer/*
+      - ./config/zsh/plugins/sync/*
+  cache:
+    desc: "sheldonのソースをキャッシュする"
+    sources:
+      - ./config/sheldon/plugins.toml
+    cmds:
+      - sheldon source > $XDG_CACHE_HOME/sheldon/source
+  clean:
+    desc: "sheldonのキャッシュを削除する"
+    cmds:
+      - rm $XDG_CACHE_HOME/sheldon/source

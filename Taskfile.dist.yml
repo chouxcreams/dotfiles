@@ -1,4 +1,8 @@
 version: "3"
+includes:
+  sheldon:
+    dir: ./config/sheldon
+    taskfile: ./config/sheldon/Taskfile.dist.yml
 tasks:
   pull:
     cmds:
@@ -9,7 +13,7 @@ tasks:
       - task: symlink
       - task: brew
       - task: completions
-      - task: sheldon
+      - task: sheldon:update
   symlink:
     sources:
       - ./scripts/symlink.sh
@@ -27,10 +31,3 @@ tasks:
       - ./scripts/completion.zsh
     generates:
       - "$XDG_DATA_HOME/zsh/completions/*"
-  sheldon:
-    cmds:
-      - sheldon lock --reinstall
-      - sheldon source > ~/.cache/sheldon/source
-    sources:
-      - ./config/zsh/plugins/defer/*
-      - ./config/zsh/plugins/sync/*
