@@ -3,6 +3,9 @@ includes:
   sheldon:
     dir: ./config/sheldon
     taskfile: ./config/sheldon/Taskfile.dist.yml
+  zsh:
+    dir: ./config/zsh
+    taskfile: ./config/zsh/Taskfile.dist.yml
 tasks:
   pull:
     cmds:
@@ -14,6 +17,7 @@ tasks:
       - task: brew
       - task: completions
       - task: sheldon:update
+      - task: zsh:compile
   symlink:
     sources:
       - ./scripts/symlink.sh

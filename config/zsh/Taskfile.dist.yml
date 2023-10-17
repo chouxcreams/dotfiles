@@ -1,0 +1,15 @@
+version: "3"
+tasks:
+  compile:
+    desc: "zshの設定ファイルをコンパイルする"
+    method: timestamp
+    sources:
+      - ./.zshrc
+    generates:
+      - ./.zshrc.zwc
+    cmds:
+      - zsh -c "zcompile ./.zshrc"
+  clean:
+    desc: "zshの設定ファイルのコンパイル結果を削除する"
+    cmds:
+      - rm ./.zshrc.zwc
