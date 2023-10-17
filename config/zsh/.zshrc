@@ -13,8 +13,8 @@ path=(
 
 ### プラグインの読み込み
 ### homebrewのbinにpathを通してから
-if [[ -e "$XDG_CACHE_HOME/sheldon/source" ]]; then
-    source "$XDG_CACHE_HOME/sheldon/source"
+if [[ -e "$XDG_CACHE_HOME/sheldon/sheldon.zsh" ]]; then
+    source "$XDG_CACHE_HOME/sheldon/sheldon.zsh"
 else
     eval "$(sheldon source)"
     echo "Run: task sheldon:cache --force "
