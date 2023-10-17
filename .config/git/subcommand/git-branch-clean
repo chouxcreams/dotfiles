@@ -12,5 +12,5 @@ fi
 # プレフィックスから始まるブランチ名のリストを取得し、ループ処理する
 for branch_name in $(git branch --list "${prefix}/*"); do
     # ローカルブランチを削除する
-    git branch -D $branch_name
+    git branch -D "$branch_name"
 done
