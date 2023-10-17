@@ -117,6 +117,9 @@ export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship.toml
 
 ### task ###
 
+### virtualenv ###
+export WORKON_HOME="$XDG_DATA_HOME"/virtualenvs
+
 ### Volta ###
 export VOLTA_HOME="$XDG_DATA_HOME"/volta
 
