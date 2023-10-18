@@ -182,3 +182,8 @@ alias gd='cd-gitroot'
 alias pathls='echo $PATH | sed -e "s/:/\n/g"'
 alias e='$EDITOR'
 alias editorconfig-gen='cp $DOTFILES_DIR/.editorconfig .' # editorconfigファイルの生成
+
+### dotfilesをグローバルで管理するための関数
+function dot {
+    (cd $DOTFILES_DIR && task $@)
+}
