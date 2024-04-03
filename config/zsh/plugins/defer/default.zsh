@@ -63,6 +63,9 @@ export LESSHISTFILE=-
 alias la='ls -a'
 alias ll='ls -la'
 
+### mise ###
+(( ${+commands[mise]} )) && eval "$(mise activate zsh)"
+
 ### MySQL ###
 export MYSQL_HISTFILE="$XDG_STATE_HOME"/mysql/mysql_history
 
