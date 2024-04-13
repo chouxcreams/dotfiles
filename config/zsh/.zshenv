@@ -7,7 +7,6 @@ export XDG_RUNTIME_DIR="$HOME"/.tmp
 
 ### Zsh ###
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-export HISTFILE="$XDG_DATA_HOME"/zsh/history
 
 ### dotfiles ###
 export DOTFILES_DIR="$HOME"/dotfiles

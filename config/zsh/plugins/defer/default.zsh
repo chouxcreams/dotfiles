@@ -1,8 +1,6 @@
 #!/usr/bin/env zsh
 
 #### 環境変数の設定 ####
-export LANG=ja_JP.UTF-8
-export HISTFILE="$XDG_STATE_HOME"/zsh/history
 export EDITOR=nano
 (( ${+commands[micro]} )) && EDITOR=micro
 export PIPENV_VENV_IN_PROJECT=true

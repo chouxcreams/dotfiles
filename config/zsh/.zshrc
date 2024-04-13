@@ -1,5 +1,7 @@
 typeset -U path PATH
 
+export HISTFILE="$XDG_STATE_HOME"/zsh/history
+
 path=(
     /opt/homebrew/bin(N-/)
     /usr/local/bin(N-/)
