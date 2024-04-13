@@ -4,7 +4,7 @@ tasks:
     desc: "sheldonを更新する"
     cmds:
       - task: lock
-      - task: cache
+      - task: build
   lock:
     desc: "sheldonをロックする"
     cmds:
@@ -19,7 +19,19 @@ tasks:
     cmds:
       - echo "#!/usr/bin/env zsh" > $XDG_CACHE_HOME/sheldon/sheldon.zsh
       - sheldon source >> $XDG_CACHE_HOME/sheldon/sheldon.zsh
+  build:
+    desc: "sheldonでzshソースを出力してzcompileする"
+    cmds:
+      - task: cache
+      - task: compile
   clean:
     desc: "sheldonのキャッシュを削除する"
     cmds:
       - rm $XDG_CACHE_HOME/sheldon/sheldon.zsh
+      - rm $XDG_CACHE_HOME/sheldon/sheldon.zwc
+  compile:
+    desc: "キャッシュされたsheldonのsourceをコンパイルする"
+    sources:
+      - $XDG_CACHE_HOME/sheldon/sheldon.zsh
+    cmds:
+      - zsh -c "zcompile $XDG_CACHE_HOME/sheldon/sheldon.zsh"
