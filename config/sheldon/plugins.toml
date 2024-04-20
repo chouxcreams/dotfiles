@@ -25,7 +25,7 @@ apply = ["defer"]
 github = "paulirish/git-open"
 
 [plugins.cd-gitroot]
-apply = ["defer"]
+apply = ["fpath", "defer"]
 github = "mollifier/cd-gitroot"
 
 [plugins.zsh-replace-multiple-dots]
