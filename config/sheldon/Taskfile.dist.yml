@@ -10,12 +10,14 @@ tasks:
     cmds:
       - sheldon lock --reinstall
     sources:
-      - ./config/zsh/plugins/defer/*
-      - ./config/zsh/plugins/sync/*
+      - ../zsh/plugins/defer/*
+      - ../zsh/plugins/sync/*
   cache:
     desc: "sheldonのソースをキャッシュする"
     sources:
-      - ./config/sheldon/plugins.toml
+      - ./plugins.toml
+    generates:
+      - $XDG_CACHE_HOME/sheldon/sheldon.zsh
     cmds:
       - echo "#!/usr/bin/env zsh" > $XDG_CACHE_HOME/sheldon/sheldon.zsh
       - sheldon source >> $XDG_CACHE_HOME/sheldon/sheldon.zsh
@@ -28,10 +30,12 @@ tasks:
     desc: "sheldonのキャッシュを削除する"
     cmds:
       - rm $XDG_CACHE_HOME/sheldon/sheldon.zsh
-      - rm $XDG_CACHE_HOME/sheldon/sheldon.zwc
+      - rm $XDG_CACHE_HOME/sheldon/sheldon.zsh.zwc
   compile:
     desc: "キャッシュされたsheldonのsourceをコンパイルする"
     sources:
       - $XDG_CACHE_HOME/sheldon/sheldon.zsh
+    generates:
+      - $XDG_CACHE_HOME/sheldon/sheldon.zsh.zwc
     cmds:
       - zsh -c "zcompile $XDG_CACHE_HOME/sheldon/sheldon.zsh"
