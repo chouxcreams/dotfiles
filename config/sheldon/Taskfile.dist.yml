@@ -19,6 +19,7 @@ tasks:
     generates:
       - $XDG_CACHE_HOME/sheldon/sheldon.zsh
     cmds:
+      - mkdir -p $XDG_CACHE_HOME/sheldon
       - echo "#!/usr/bin/env zsh" > $XDG_CACHE_HOME/sheldon/sheldon.zsh
       - sheldon source >> $XDG_CACHE_HOME/sheldon/sheldon.zsh
   build:

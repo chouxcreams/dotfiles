@@ -133,6 +133,9 @@ export WAKATIME_HOME="$XDG_CONFIG_HOME"/wakatime
 ### zellij ###
 alias zel="zellij"
 
+### zeno ###
+export ZENO_HOME="$XDG_CONFIG_HOME"/zeno
+
 ### zoxide ###
 export _ZO_DATA_DIR="$XDG_DATA_HOME/zoxide"
 if (( ${+commands[zoxide]} )); then

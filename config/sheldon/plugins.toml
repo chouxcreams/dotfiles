@@ -32,6 +32,13 @@ github = "mollifier/cd-gitroot"
 apply = ["defer"]
 github = "momo-lab/zsh-replace-multiple-dots"
 
+[plugins.zeno]
+apply = ["defer"]
+github = "yuki-yano/zeno.zsh"
+hooks.post = """
+bindkey ' '  zeno-auto-snippet
+"""
+
 [plugins.local-defer]
 apply = ["defer"]
 local = "~/.config/zsh/plugins/defer"
