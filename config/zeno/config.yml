@@ -9,6 +9,20 @@ snippets:
     keyword: gcim
     snippet: git commit -m '{{commit_message}}'
 
+  - name: git add all & commit
+    keyword: gac
+    snippet: |
+      git add . && git commit -m '{{commit_message}}'
+
+  - name: git add all, commit & push
+    keyword: gacp
+    snippet: |
+      git add . && git commit -m '{{commit_message}}' && git push
+
+  - name: git push
+    keyword: gp
+    snippet: git push --set-upstream origin {{branch}}
+
   - name: "null"
     keyword: "null"
     snippet: ">/dev/null 2>&1"
