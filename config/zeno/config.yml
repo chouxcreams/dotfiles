@@ -1,5 +1,21 @@
 snippets:
   # snippet and keyword abbrev
+  - name: git
+    keyword: g
+    snippet: git
+
+  - name: git create new branch
+    keyword: sc
+    snippet: switch -c {{branch_name}}
+    context:
+      lbuffer: '^git'
+
+  - name: git branch
+    keyword: br
+    snippet: branch
+    context:
+      lbuffer: '^git'
+
   - name: git status
     keyword: gs
     snippet: git status --short --branch
@@ -21,7 +37,11 @@ snippets:
 
   - name: git push
     keyword: gp
-    snippet: git push --set-upstream origin {{branch}}
+    snippet: git push
+
+  - name: git log
+    keyword: gl
+    snippet: git plog
 
   - name: "null"
     keyword: "null"

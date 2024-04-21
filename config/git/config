@@ -26,7 +26,7 @@
 	diffFilter = delta --color-only
 
 [alias]
-	sc = switch -c
+	plog = log --pretty='format:%C(yellow)%h %C(green)%cd%C(red)%d%n%C(reset)%s %C(cyan)[%an]%n' --date=format-local:'%Y/%m/%d %H:%M:%S'
 
 [push]
 	default = current
