@@ -25,7 +25,6 @@ alias desk='deno task'
 alias drun='deno run'
 
 ### Docker ###
-alias dcp='docker compose'
 
 ### Elm ###
 # IntelliJのElmプラグインがELM_HOMEに対応していないため使わない

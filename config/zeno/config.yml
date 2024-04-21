@@ -59,3 +59,11 @@ snippets:
     context:
       lbuffer: '^git\s+checkout\s+'
     evaluate: true # eval snippet
+
+  - name: docker compose
+    keyword: dcp
+    snippet: docker compose
+
+  - name: docker compose up
+    keyword: dup
+    snippet: docker compose up -d
