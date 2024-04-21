@@ -9,7 +9,7 @@ jobs:
         os: [macos-11, macos-12, macos-13]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: echo $XDG_CONFIG_HOME
       - name: Copy the directory
         run: mkdir ${HOME}/dotfiles && cp -r ${GITHUB_WORKSPACE}/ ${HOME}/dotfiles/
