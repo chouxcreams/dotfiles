@@ -36,9 +36,12 @@ github = "momo-lab/zsh-replace-multiple-dots"
 apply = ["defer"]
 github = "yuki-yano/zeno.zsh"
 hooks.post = """
-if [[ -n $ZENO_LOADED ]]; then
-  bindkey ' '  zeno-auto-snippet
-fi
+__zeno_keybind() {
+  if [[ -n $ZENO_LOADED ]]; then
+    bindkey ' '  zeno-auto-snippet
+  fi
+}
+zsh-defer __zeno_keybind
 """
 
 [plugins.local-defer]
