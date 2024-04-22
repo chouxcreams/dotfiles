@@ -60,14 +60,6 @@ local = "~/.config/zsh/plugins/sync"
 use = ["*.zsh"]
 
 ### completions
-[plugins.delta-completions]
-apply = ["fpath"]
-remote = "https://raw.githubusercontent.com/dandavison/delta/master/etc/completion/completion.zsh"
-
-[plugins.task-completions]
-apply = ["fpath"]
-remote = "https://raw.githubusercontent.com/go-task/task/main/completion/zsh/_task"
-
 [plugins.local-completions]
 apply = ["fpath"]
 local = "~/.local/share/zsh/completions"
