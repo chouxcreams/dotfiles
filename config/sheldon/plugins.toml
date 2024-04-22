@@ -39,9 +39,14 @@ hooks.post = """
 __zeno_keybind() {
   if [[ -n $ZENO_LOADED ]]; then
     bindkey ' '  zeno-auto-snippet
+    bindkey '^i' zeno-completion
   fi
 }
 zsh-defer __zeno_keybind
+"""
+hooks.pre = """
+export ZENO_ENABLE_SOCK=1
+export ZENO_COMPLETION_FALLBACK=expand-or-complete
 """
 
 [plugins.local-defer]
