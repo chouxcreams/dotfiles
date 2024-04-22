@@ -39,6 +39,10 @@ snippets:
     keyword: gp
     snippet: git push
 
+  - name: git switch branch
+    keyword: gsw
+    snippet: git switch {{branch_name}}
+
   - name: git log
     keyword: gl
     snippet: git plog
