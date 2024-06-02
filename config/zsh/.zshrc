@@ -6,6 +6,7 @@ path=(
     /opt/homebrew/bin(N-/)
     /usr/local/bin(N-/)
     /home/linuxbrew/.linuxbrew/bin(N-/)
+    $HOME/.local/bin(N-/)
     $HOME/bin(N-/)
     $path
 )
