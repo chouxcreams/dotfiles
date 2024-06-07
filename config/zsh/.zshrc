@@ -15,7 +15,7 @@ path=(
 ### mise ###
 if (( ${+commands[mise]} )) then;
     eval "$(mise activate zsh)"
-    eval "$(mise hook-env -s zsh)" # miseに設定されたpathが使えるようにする
+    eval "$(mise hook-env -s zsh)" &> /dev/null # miseに設定されたpathが使えるようにする
 fi
 
 ### プラグインの読み込み
