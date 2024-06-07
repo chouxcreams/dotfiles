@@ -3,3 +3,8 @@ experimental = true
 
 [tools]
 deno = "latest"
+node = "latest"
+"npm:tty-table" = "latest"
+python = "latest"
+"pipx:terminaltexteffects" = "latest"
+"go:github.com/sheepla/pingu" = "latest"

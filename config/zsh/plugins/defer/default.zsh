@@ -76,6 +76,10 @@ export NODE_REPL_HISTORY="$XDG_STATE_HOME"/node/node_repl_history
 ### npm ###
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 
+### pipx ###
+export PIPX_HOME="$XDG_DATA_HOME"/pipx
+export PIPX_BIN_DIR="$XDG_DATA_HOME"/pipx/bin
+
 ### Poetry ###
 export POETRY_HOME="$XDG_DATA_HOME/poetry"
 
@@ -148,6 +152,7 @@ path=(
     $XDG_CONFIG_HOME/git/subcommand(N-/)
     $VOLTA_HOME/bin(N-/)
     $POETRY_HOME/bin(N-/)
+    $PIPX_BIN_DIR(N-/)
     $path
 )
 
