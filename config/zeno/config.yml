@@ -82,6 +82,12 @@ snippets:
       lbuffer: '.+\s'
       # rbuffer: ''
 
+  - name: help option
+    keyword: -H
+    snippet: --help
+    context:
+      lbuffer: '^.*\s'
+
   - name: branch
     keyword: B
     snippet: git symbolic-ref --short HEAD
