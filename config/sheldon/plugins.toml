@@ -48,6 +48,8 @@ zsh-defer __zeno_keybind
 hooks.pre = """
 export ZENO_ENABLE_SOCK=1
 export ZENO_COMPLETION_FALLBACK=expand-or-complete
+export ZENO_GIT_TREE="eza --tree"
+export ZENO_GIT_CAT="bat --color=always"
 """
 
 [plugins.zsh-autopair]
