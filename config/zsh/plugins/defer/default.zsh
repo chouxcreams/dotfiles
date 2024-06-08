@@ -31,7 +31,7 @@ alias drun='deno run'
 # export ELM_HOME="$XDG_CONFIG_HOME"/elm
 
 ### eza ###
-(( ${+commands[lsd]} )) && alias ls=' eza --git --icons=always --header --time-style "+%Y-%m-%d %H:%M"'
+(( ${+commands[eza]} )) && alias ls=' eza --git --icons=always --header --time-style "+%Y-%m-%d %H:%M"'
 alias la='ls -a'
 alias ll='ls -la'
 
