@@ -11,6 +11,12 @@ defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file 
 [plugins.zsh-autosuggestions]
 apply = ["defer"]
 github = "zsh-users/zsh-autosuggestions"
+hooks.post = """
+__zsh_autosuggestions_keybind() {
+  bindkey '^j' autosuggest-execute
+}
+zsh-defer __zsh_autosuggestions_keybind
+"""
 
 [plugins.zsh-completions]
 apply = ["defer"]
