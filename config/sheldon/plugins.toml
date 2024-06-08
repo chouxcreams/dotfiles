@@ -49,6 +49,10 @@ export ZENO_ENABLE_SOCK=1
 export ZENO_COMPLETION_FALLBACK=expand-or-complete
 """
 
+[plugins.zsh-autopair]
+apply = ["defer"]
+github = "hlissner/zsh-autopair"
+
 [plugins.local-defer]
 apply = ["defer"]
 local = "~/.config/zsh/plugins/defer"
