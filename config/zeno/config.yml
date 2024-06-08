@@ -35,17 +35,42 @@ snippets:
     snippet: |
       git add . && git commit -m '{{commit_message}}' && git push
 
-  - name: git push
+  - name: gp to git push
     keyword: gp
     snippet: git push
+
+  - name: git push
+    keyword: p
+    snippet: push
+    context:
+      lbuffer: '^git'
 
   - name: git switch branch
     keyword: gsw
     snippet: git switch {{branch_name}}
 
+  - name: git switch
+    keyword: sw
+    snippet: switch {{branch_name}}
+    context:
+      lbuffer: '^git'
+
+  - name: git pull
+    keyword: pl
+    snippet: pull
+    context:
+      lbuffer: '^git'
+
   - name: git log
     keyword: gl
     snippet: git plog
+
+  - name: git set origin
+    keyword: o
+    snippet: zsh -c "git symbolic-ref --short HEAD | sed 's/^/origin /'"
+    context:
+      lbuffer: '^git (push|pull)'
+    evaluate: true
 
   - name: "null"
     keyword: "null"
