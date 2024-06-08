@@ -30,6 +30,11 @@ alias drun='deno run'
 # IntelliJのElmプラグインがELM_HOMEに対応していないため使わない
 # export ELM_HOME="$XDG_CONFIG_HOME"/elm
 
+### eza ###
+(( ${+commands[lsd]} )) && alias ls=' eza --git --icons=always --header --time-style "+%Y-%m-%d %H:%M"'
+alias la='ls -a'
+alias ll='ls -la'
+
 ### fzf ###
 [ -f $XDG_DATA_HOME/fzf/fzf.zsh ] && source $XDG_DATA_HOME/fzf/fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f'
@@ -54,11 +59,6 @@ export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 
 ### less ###
 export LESSHISTFILE=-
-
-### lsd ###
-(( ${+commands[lsd]} )) && alias ls='lsd'
-alias la='ls -a'
-alias ll='ls -la'
 
 ### MySQL ###
 export MYSQL_HISTFILE="$XDG_STATE_HOME"/mysql/mysql_history
