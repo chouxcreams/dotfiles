@@ -71,3 +71,12 @@ snippets:
   - name: docker compose up
     keyword: dup
     snippet: docker compose up -d
+
+completions:
+  - name: go task
+    patterns:
+      - "^task $"
+    sourceCommand: "task --list-all 2>/dev/null | sed '1d'"
+    options:
+      --prompt: "'Task> '"
+    callback: "sed -n 's/^\\* \\([^:]*\\):.*/\\1/p'"

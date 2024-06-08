@@ -40,6 +40,7 @@ __zeno_keybind() {
   if [[ -n $ZENO_LOADED ]]; then
     bindkey ' '  zeno-auto-snippet
     bindkey '^i' zeno-completion
+    bindkey '^m' zeno-auto-snippet-and-accept-line
   fi
 }
 zsh-defer __zeno_keybind
