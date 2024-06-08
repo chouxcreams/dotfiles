@@ -97,6 +97,9 @@ export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
 export IPYTHONDIR="$XDG_CONFIG_HOME"/jupyter
 export MPLCONFIGDIR="$XDG_CONFIG_HOME"/matplotlib
 
+### ripgrep ###
+export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME"/ripgrep/ripgreprc
+
 ### Rust ###
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
