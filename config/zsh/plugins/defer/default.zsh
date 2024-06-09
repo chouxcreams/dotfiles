@@ -21,6 +21,7 @@ export BAT_CONFIG_PATH="$XDG_CONFIG_HOME"/bat/bat.conf
 ### deno ###
 export DENO_DIR="$XDG_CACHE_HOME"/deno
 export DENO_INSTALL_ROOT="$XDG_DATA_HOME"/deno
+export DENO_NO_UPDATE_CHECK=1
 
 ### Docker ###
 
