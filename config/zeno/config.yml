@@ -111,3 +111,11 @@ completions:
     options:
       --prompt: "'Task> '"
     callback: "sed -n 's/^\\* \\([^:]*\\):.*/\\1/p'"
+  - name: dot command
+    patterns:
+      - "^dot $"
+    sourceCommand: "dot --list-all 2>/dev/null | sed '1d'"
+    options:
+      --prompt: "'dot> '"
+    callback: "sed -n 's/^\\* \\([^:]*\\):.*/\\1/p'"
+
