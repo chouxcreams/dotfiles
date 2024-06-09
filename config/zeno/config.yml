@@ -145,3 +145,17 @@ completions:
       --prompt: "'dot> '"
     callback: "sed -n 's/^\\* \\([^:]*\\):.*/\\1/p'"
 
+  - name: glow
+    patterns:
+      - "^glow $"
+    sourceCommand: "fd \".*\\.md\" -d 2"
+    options:
+      --prompt: "'glow> '"
+
+  - name: glow stash
+    patterns:
+      - "^glow stash $"
+    sourceCommand: "fd \".*\\.md\" -d 2"
+    options:
+      --prompt: "'glow stash> '"
+
