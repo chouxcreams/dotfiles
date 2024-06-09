@@ -8,6 +8,11 @@ defer = "{{ hooks?.pre | nl }}{% for file in files %}zsh-defer source \"{{ file 
 
 ### plugins
 [plugins]
+[plugins.local-defer]
+apply = ["defer"]
+local = "~/.config/zsh/plugins/defer"
+use = ["*.zsh"]
+
 [plugins.zsh-autosuggestions]
 apply = ["defer"]
 github = "zsh-users/zsh-autosuggestions"
@@ -65,11 +70,11 @@ github = "hlissner/zsh-autopair"
 [plugins.atuin]
 apply = ["defer"]
 remote = "https://raw.githubusercontent.com/atuinsh/atuin/main/atuin.plugin.zsh"
-
-[plugins.local-defer]
-apply = ["defer"]
-local = "~/.config/zsh/plugins/defer"
-use = ["*.zsh"]
+hooks.post = """
+if (( ${+commands[atuin]} )); then
+  bindkey '^r' atuin-search
+fi
+"""
 
 [plugins.local-sync]
 apply = ["source"]
