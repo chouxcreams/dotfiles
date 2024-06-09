@@ -95,6 +95,10 @@ snippets:
       lbuffer: '^git\s+checkout\s+'
     evaluate: true # eval snippet
 
+  - name: brew install
+    keyword: i
+    snippet: install {{package_name}}
+
   - name: docker
     keyword: dc
     snippet: docker
