@@ -43,6 +43,9 @@ export FZF_ALT_C_COMMAND='fd --type d'
 ### gibo ###
 export GIBO_BOILERPLATES="$XDG_DATA_HOME"/gitignore-boilerplates
 
+### glow ###
+alias glow="glow --config $XDG_CONFIG_HOME/glow/config.yml"
+
 ### gmailctl ###
 if (( ${+commands[gmailctl]} )) then;
     alias gmailctl='gmailctl --config $XDG_CONFIG_HOME/gmailctl'
