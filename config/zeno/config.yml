@@ -95,6 +95,10 @@ snippets:
       lbuffer: '^git\s+checkout\s+'
     evaluate: true # eval snippet
 
+  - name: docker
+    keyword: dc
+    snippet: docker
+
   - name: docker compose
     keyword: dcp
     snippet: docker compose
@@ -102,6 +106,22 @@ snippets:
   - name: docker compose up
     keyword: dup
     snippet: docker compose up -d
+
+  - name: deno
+    keyword: dn
+    snippet: deno
+
+  - name: deno run
+    keyword: r
+    snippet: run
+    context:
+      lbuffer: '^deno\s'
+
+  - name: deno task
+    keyword: t
+    snippet: task
+    context:
+      lbuffer: '^deno\s'
 
 completions:
   - name: go task
