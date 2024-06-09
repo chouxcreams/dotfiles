@@ -98,6 +98,8 @@ snippets:
   - name: brew install
     keyword: i
     snippet: install {{package_name}}
+    context:
+      lbuffer: '^brew'
 
   - name: docker
     keyword: dc
