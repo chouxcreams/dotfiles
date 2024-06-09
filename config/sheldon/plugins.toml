@@ -62,6 +62,10 @@ export ZENO_GIT_CAT="bat --color=always"
 apply = ["defer"]
 github = "hlissner/zsh-autopair"
 
+[plugins.atuin]
+apply = ["defer"]
+remote = "https://raw.githubusercontent.com/atuinsh/atuin/main/atuin.plugin.zsh"
+
 [plugins.local-defer]
 apply = ["defer"]
 local = "~/.config/zsh/plugins/defer"
