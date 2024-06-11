@@ -129,6 +129,10 @@ snippets:
     context:
       lbuffer: '^deno\s'
 
+  - name: lazygit
+    keyword: lg
+    snippet: lazygit
+
 completions:
   - name: go task
     patterns:
