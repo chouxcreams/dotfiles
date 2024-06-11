@@ -18,6 +18,12 @@ tasks:
       - task: completions
       - task: sheldon:update
       - task: zsh:compile
+  upgrade:
+    desc: "brewとmiseで使用しているコマンドのアップデート"
+    cmds:
+      - brew update
+      - brew upgrade
+      - mise upgrade
   symlink:
     sources:
       - ./scripts/symlink.sh
