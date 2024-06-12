@@ -13,16 +13,6 @@ apply = ["defer"]
 local = "~/.config/zsh/plugins/defer"
 use = ["*.zsh"]
 
-[plugins.zsh-autosuggestions]
-apply = ["defer"]
-github = "zsh-users/zsh-autosuggestions"
-hooks.post = """
-__zsh_autosuggestions_keybind() {
-  bindkey '^j' autosuggest-execute
-}
-zsh-defer __zsh_autosuggestions_keybind
-"""
-
 [plugins.zsh-completions]
 apply = ["defer"]
 github = "zsh-users/zsh-completions"
@@ -52,15 +42,26 @@ __zeno_keybind() {
     bindkey ' '  zeno-auto-snippet
     bindkey '^i' zeno-completion
     bindkey '^m' zeno-auto-snippet-and-accept-line
+    bindkey '^x '  zeno-insert-space
+    bindkey '^x^m' accept-line
   fi
 }
 zsh-defer __zeno_keybind
 """
 hooks.pre = """
-export ZENO_ENABLE_SOCK=1
 export ZENO_COMPLETION_FALLBACK=expand-or-complete
 export ZENO_GIT_TREE="eza --tree"
 export ZENO_GIT_CAT="bat --color=always"
+"""
+
+[plugins.zsh-autosuggestions]
+apply = ["defer"]
+github = "zsh-users/zsh-autosuggestions"
+hooks.post = """
+__zsh_autosuggestions_keybind() {
+    bindkey '^j' autosuggest-execute
+}
+zsh-defer __zsh_autosuggestions_keybind
 """
 
 [plugins.zsh-autopair]
@@ -69,12 +70,12 @@ github = "hlissner/zsh-autopair"
 
 [plugins.atuin]
 apply = ["defer"]
-remote = "https://raw.githubusercontent.com/atuinsh/atuin/main/atuin.plugin.zsh"
 hooks.post = """
 if (( ${+commands[atuin]} )); then
   bindkey '^r' atuin-search
 fi
 """
+remote = "https://raw.githubusercontent.com/atuinsh/atuin/main/atuin.plugin.zsh"
 
 [plugins.local-sync]
 apply = ["source"]

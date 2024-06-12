@@ -1,12 +1,11 @@
 % navi
-
 # naviのチートシートを編集する
 $EDITOR $NAVI_HOME/cheats/default.cheat
 
 % zsh
-
 # zshrcを編集する
 $EDITOR $ZDOTDIR/.zshrc
 
+% zsh
 # local.zshを編集する
-$EDITOR $ZDOTDIR/rc/local.zsh
+$EDITOR $ZDOTDIR/plugins/defer/local.zsh
