@@ -10,11 +10,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
-      - run: echo $XDG_CONFIG_HOME
       - name: Copy the directory
         run: mkdir ${HOME}/dotfiles && cp -r ${GITHUB_WORKSPACE}/ ${HOME}/dotfiles/
       - name: Run init.sh
-        run: export XDG_CONFIG_HOME=$HOME/.config && make init
+        run: source ${HOME}/dotfiles/config/zsh/.zshenv && make init
       - name: Setup macOS defaults config
         run: make macos
 # - name: Load .zshenv
