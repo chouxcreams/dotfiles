@@ -1,3 +1,4 @@
 .task/
 Taskfile.yml
 .envrc
+.mise.local.toml
