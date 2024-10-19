@@ -135,6 +135,9 @@ export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 ### wakatime ###
 export WAKATIME_HOME="$XDG_CONFIG_HOME"/wakatime
 
+### wasmer ###
+export WASMER_DIR="$XDG_DATA_HOME"/wasmer
+
 ### zellij ###
 alias zel="zellij"
 
