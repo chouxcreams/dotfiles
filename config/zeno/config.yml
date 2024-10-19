@@ -49,9 +49,19 @@ snippets:
     keyword: gsw
     snippet: git switch {{branch_name}}
 
+  - name: git switch main
+    keyword: gsm
+    snippet: git switch main
+
   - name: git switch
     keyword: sw
     snippet: switch {{branch_name}}
+    context:
+      lbuffer: '^git'
+
+  - name: git switch main
+    keyword: sm
+    snippet: switch main
     context:
       lbuffer: '^git'
 

@@ -13,6 +13,10 @@ path=(
 )
 
 
+### anyenv ###
+export ANYENV_ROOT="$XDG_DATA_HOME"/anyenv
+(( ${+commands[anyenv]} )) && eval "$(anyenv init -)" # miseよりも先に読み込まないと、miseの設定を優先してくれない。
+
 ### mise ###
 if (( ${+commands[mise]} )) then;
     eval "$(mise activate zsh)"

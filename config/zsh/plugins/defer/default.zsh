@@ -5,10 +5,6 @@ export EDITOR=nano
 (( ${+commands[micro]} )) && EDITOR=micro
 export PIPENV_VENV_IN_PROJECT=true
 
-### anyenv ###
-export ANYENV_ROOT="$XDG_DATA_HOME"/anyenv
-(( ${+commands[anyenv]} )) && eval "$(anyenv init -)"
-
 ### aws-cli ###
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
