@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# 引数からリベース元のブランチ名を取得、指定がない場合はmainを使用
+base_branch=${1:-main}
+
+# 現在のブランチ名を取得
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+# base_branch と current_branch が同じかどうかを確認
+if [ "$base_branch" == "$current_branch" ]; then
+  echo "Current branch ($current_branch) is the same as base branch ($base_branch). Performing git pull instead of rebase."
+  git pull origin $base_branch
+
+  # pull が成功したかどうかをチェック
+  if [ $? -eq 0 ]; then
+    echo "Pull completed successfully on branch $current_branch."
+  else
+    echo "Pull failed."
+  fi
+else
+  # 現在のブランチに対してリベース
+  git pull origin $base_branch
+
+  # リベースが成功したかどうかをチェック
+  if [ $? -eq 0 ]; then
+    echo "Rebase completed successfully on branch $current_branch to $base_branch."
+  else
+    echo "Rebase failed. Please resolve conflicts and continue."
+  fi
+fi

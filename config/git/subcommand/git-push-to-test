@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# 引数からリベース元のブランチ名を取得、指定がない場合はmainを使用
+base_branch=${1}
+
+# 現在のブランチ名を取得
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+git fetch origin $base_branch
+
+git switch $base_branch
+
+git merge $current_branch
+
+git push -u origin $base_branch
+
+git switch $current_branch
