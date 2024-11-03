@@ -1,0 +1,32 @@
+modmap:
+  - name: Global
+    remap:
+      Space:
+        held: KEY_LEFTSHIFT
+        alone: Space
+        alone_timeout_millis: 300
+  - name: CapsLock
+    remap:
+      KEY_CAPSLOCK:
+        held: KEY_LEFTCTRL
+        alone: KEY_ESC
+        alone_timeout_millis: 300
+  - name: IME and KeySwap
+    remap:
+      KEY_LEFTMETA:
+        held: KEY_LEFTCTRL
+        alone: KEY_MUHENKAN
+        alone_timeout_millis: 300
+      KEY_RIGHTMETA:
+        held: KEY_RIGHTCTRL
+        alone: KEY_HENKAN
+        alone_timeout_millis: 300
+      KEY_LEFTCTRL: KEY_LEFTMETA
+      KEY_RIGHTCTRL: KEY_RIGHTMETA
+        
+virtual_modifiers:
+  - CapsLock
+keymap:
+  - name: Emacs Like Cursor Move
+    remap:
+      CapsLock-j: Left
