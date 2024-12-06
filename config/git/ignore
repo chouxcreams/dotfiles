@@ -2,3 +2,5 @@
 Taskfile.yml
 .envrc
 .mise.local.toml
+tmp/
+.DS_Store

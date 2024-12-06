@@ -21,10 +21,6 @@ github = "zsh-users/zsh-completions"
 apply = ["defer"]
 github = "zdharma-continuum/fast-syntax-highlighting"
 
-[plugins.git-open]
-apply = ["defer"]
-github = "paulirish/git-open"
-
 [plugins.cd-gitroot]
 apply = ["fpath", "defer"]
 github = "mollifier/cd-gitroot"
