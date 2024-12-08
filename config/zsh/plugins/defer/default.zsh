@@ -12,6 +12,9 @@ export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
 ### bat ###
 export BAT_CONFIG_PATH="$XDG_CONFIG_HOME"/bat/bat.conf
 
+### CUDA ###
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+
 ### delta ###
 
 ### deno ###
