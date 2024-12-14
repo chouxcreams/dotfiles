@@ -82,6 +82,14 @@ snippets:
       lbuffer: '^git (push|pull)'
     evaluate: true
 
+  - name: github copilot suggest
+    keyword: ghcs
+    snippet: gh copilot suggest
+
+  - name: github copilot explain
+    keyword: ghce
+    snippet: gh copilot explain
+
   - name: "null"
     keyword: "null"
     snippet: ">/dev/null 2>&1"
