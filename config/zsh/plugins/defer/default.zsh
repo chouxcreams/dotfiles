@@ -5,6 +5,10 @@ export EDITOR=nano
 (( ${+commands[micro]} )) && EDITOR=micro
 export PIPENV_VENV_IN_PROJECT=true
 
+### Android ###
+export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
+(( ${+commands[adb]} )) && alias adb='HOME="$XDG_DATA_HOME"/android adb'
+
 ### aws-cli ###
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME"/aws/config
