@@ -96,6 +96,9 @@ export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
 
 ### Python ###
 # export PYTHONSTARTUP="$XDG_CONFIG_HOME"/python/pythonstartup.py
+export PYTHON_HISTORY="$XDG_STATE_HOME"/python/history # 3.13以降
+export PYTHONPYCACHEPREFIX="$XDG_CACHE_HOME"/python
+export PYTHONUSERBASE="$XDG_DATA_HOME"/python
 export PYLINTHOME="$XDG_CACHE_HOME"/pylint
 export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
 export IPYTHONDIR="$XDG_CONFIG_HOME"/jupyter
@@ -125,6 +128,9 @@ export SQLITE_HISTORY="$XDG_STATE_HOME"/sqlite/sqlite_history
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship.toml
 
 ### task ###
+
+### tldr ###
+export TLDR_CACHE_DIR="$XDG_CACHE_HOME"/tldr
 
 ### virtualenv ###
 export WORKON_HOME="$XDG_DATA_HOME"/virtualenvs
