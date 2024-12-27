@@ -12,6 +12,10 @@ path=(
     $path
 )
 
+### ghostty ###
+if [ -n "${GHOSTTY_RESOURCES_DIR}" ]; then
+    builtin source "${GHOSTTY_RESOURCES_DIR}/shell-integration/zsh/ghostty-integration"
+fi
 
 ### anyenv ###
 export ANYENV_ROOT="$XDG_DATA_HOME"/anyenv
