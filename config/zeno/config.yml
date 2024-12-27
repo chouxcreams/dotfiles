@@ -151,6 +151,10 @@ snippets:
     keyword: lg
     snippet: lazygit
 
+  - name: zellij
+    keyword: zel
+    snippet: zellij
+
 completions:
   - name: go task
     patterns:
@@ -181,3 +185,9 @@ completions:
     options:
       --prompt: "'glow stash> '"
 
+  - name: zellij session
+    patterns:
+      - "^zellij (a|d|k|attach|delete|kill) $"
+    sourceCommand: "zellij list-sessions --short"
+    options:
+      --prompt: "'zellij sessions> '"

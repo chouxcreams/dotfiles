@@ -41,14 +41,26 @@ fadd() {
     git config --local delta.side-by-side $default
 }
 
-za() {
-    local session
-    session=$(zellij list-sessions | fzf) &&
-    zellij attach $session
+zj() {
+  # zellijのセッション一覧をfzfでフィルタする
+  local session
+  # --simple オプションで整形された一覧を取得できる（バージョンによっては不要な場合あり）
+  session=$(zellij list-sessions --short 2> /dev/null | fzf --prompt="Select a session> ")
+
+  # セッションが選択されなかった場合は何もしない
+  if [[ -z "$session" ]]; then
+    echo "No session selected."
+    return 1
+  fi
+
+  # 選択されたセッションにアタッチ
+  zellij attach "$session"
 }
 
-zk() {
-    local session
-    session=$(zellij list-sessions | fzf) &&
-    zellij kill-session $session
+function fg() {
+    FZF_DEFAULT_OPTS="${FZF_DEFAULT_OPTS} --reverse --height=50%"
+    local root="$(ghq root)"
+    local repo="$(ghq list | fzf --preview="ls -AF --color=always ${root}/{1}")"
+    local dir="${root}/${repo}"
+    [ -n "${dir}" ] && cd "${dir}"
 }

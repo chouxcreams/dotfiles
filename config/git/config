@@ -44,3 +44,5 @@
 	defaultBranch = main
 [core]
 	autocrlf = input
+[ghq]
+	root = ~/src
