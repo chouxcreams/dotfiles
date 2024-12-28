@@ -30,6 +30,8 @@ tasks:
     cmds:
       - ./.mise/tasks/symlink
   brew:
+    platforms:
+      - darwin
     cmds:
       - brew bundle --file=$XDG_CONFIG_HOME/homebrew/Brewfile
     sources:
