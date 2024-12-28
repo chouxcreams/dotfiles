@@ -1,0 +1,6 @@
+[tasks.update]
+alias = "up"
+quiet = true
+run = [
+  "mise run symlink",
+]

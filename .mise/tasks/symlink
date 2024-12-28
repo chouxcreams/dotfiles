@@ -1,4 +1,6 @@
-#! /bin/bash -e
+#!/usr/bin/env bash
+#MISE sources=["$MISE_DIR/tasks/symlink"]
+#MISE outputs={ auto = true }
 
 DOTFILES_DIR="$HOME"/dotfiles
 DOTFILES_CONFIG_DIR="$DOTFILES_DIR"/config

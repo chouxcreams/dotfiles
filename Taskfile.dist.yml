@@ -26,9 +26,9 @@ tasks:
       - mise upgrade
   symlink:
     sources:
-      - ./scripts/symlink.sh
+      - ./.mise/tasks/symlink
     cmds:
-      - ./scripts/symlink.sh
+      - ./.mise/tasks/symlink
   brew:
     cmds:
       - brew bundle --file=$XDG_CONFIG_HOME/homebrew/Brewfile
