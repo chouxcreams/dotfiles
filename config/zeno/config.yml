@@ -8,13 +8,13 @@ snippets:
     keyword: sc
     snippet: switch -c {{branch_name}}
     context:
-      lbuffer: '^git'
+      lbuffer: "^git"
 
   - name: git branch
     keyword: br
     snippet: branch
     context:
-      lbuffer: '^git'
+      lbuffer: "^git"
 
   - name: git status
     keyword: gs
@@ -43,7 +43,7 @@ snippets:
     keyword: p
     snippet: push
     context:
-      lbuffer: '^git'
+      lbuffer: "^git"
 
   - name: git switch branch
     keyword: gsw
@@ -57,19 +57,19 @@ snippets:
     keyword: sw
     snippet: switch {{branch_name}}
     context:
-      lbuffer: '^git'
+      lbuffer: "^git"
 
   - name: git switch main
     keyword: sm
     snippet: switch main
     context:
-      lbuffer: '^git'
+      lbuffer: "^git"
 
   - name: git pull
     keyword: pl
     snippet: pull
     context:
-      lbuffer: '^git'
+      lbuffer: "^git"
 
   - name: git log
     keyword: gl
@@ -79,7 +79,7 @@ snippets:
     keyword: o
     snippet: zsh -c "git symbolic-ref --short HEAD | sed 's/^/origin /'"
     context:
-      lbuffer: '^git (push|pull)'
+      lbuffer: "^git (push|pull)"
     evaluate: true
 
   - name: github copilot suggest
@@ -117,7 +117,7 @@ snippets:
     keyword: i
     snippet: install {{package_name}}
     context:
-      lbuffer: '^brew'
+      lbuffer: "^brew"
 
   - name: docker
     keyword: dc
@@ -155,6 +155,12 @@ snippets:
     keyword: zel
     snippet: zellij
 
+  - name: systemctl
+    keyword: sc
+    snippet: systemctl
+    context:
+      lbuffer: '^(sudo\s)?'
+
 completions:
   - name: go task
     patterns:
@@ -184,7 +190,6 @@ completions:
     sourceCommand: "fd \".*\\.md\" -d 2"
     options:
       --prompt: "'glow stash> '"
-
   - name: zellij session
     patterns:
       - "^zellij (a|d|k|attach|delete|kill) $"
