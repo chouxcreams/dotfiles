@@ -1,3 +1,5 @@
+keypress_delay_ms: 20
+
 modmap:
   - name: Global
     remap:
@@ -12,7 +14,7 @@ modmap:
   #       alone: KEY_ESC
   #       alone_timeout_millis: 300
   #   application:
-  #     only: *terminals
+  #     only: com.mitchellh.ghostty
   - name: CapsLock
     remap:
       KEY_CAPSLOCK:
@@ -62,13 +64,13 @@ keymap:
   - name: 1password extension
     remap:
       CapsLock-Shift-x: M-Shift-x
-
+  - name: ScreenLock
+    remap:
+      CapsLock-Ctrl-q: Ctrl-Super-q
   - name: Terminal HotKey
     remap:
       M-Space: F12
 
 shared:
   terminals: &terminals
-    - Yakuake
-    - Konsole
-    - Rio
+    - com.mitchellh.ghostty
