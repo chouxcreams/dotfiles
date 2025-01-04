@@ -67,9 +67,6 @@ keymap:
   - name: ScreenLock
     remap:
       CapsLock-Ctrl-q: Ctrl-Super-q
-  - name: Terminal HotKey
-    remap:
-      M-Space: F12
 
 shared:
   terminals: &terminals
