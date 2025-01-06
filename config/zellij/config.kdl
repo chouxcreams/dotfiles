@@ -4,6 +4,16 @@ keybinds {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
         bind "Ctrl d" { Detach; }
+
+        // zellij-autolockのためにEnterにフックして発火するようにしている
+        bind "Enter" {
+            // Passthru `Enter`.
+            WriteChars "\u{000D}";
+            // Invoke autolock to immediately assess proper lock state.
+            // (This provides a snappier experience compared to
+            // solely relying on `reaction_seconds` to elapse.)
+            MessagePlugin "autolock" {};
+        }
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
@@ -174,7 +184,24 @@ plugins {
     status-bar { path "status-bar"; }
     strider { path "strider"; }
     compact-bar { path "compact-bar"; }
+    autolock location="https://github.com/fresh2dev/zellij-autolock/releases/download/0.2.1/zellij-autolock.wasm" {
+        // Enabled at start?
+        is_enabled true
+        // Lock when any open these programs open.
+        triggers "nvim|vim|git|fzf|zoxide|atuin|micro"
+        // Reaction to input occurs after this many seconds. (default=0.3)
+        // (An existing scheduled reaction prevents additional reactions.)
+        reaction_seconds "0.1"
+        // Print to Zellij log? (default=false)
+        print_to_log true
+    }
 }
+
+load_plugins {
+    autolock
+}
+
+theme "iceberg-dark"
 
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
