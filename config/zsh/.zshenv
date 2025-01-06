@@ -11,3 +11,5 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 ### dotfiles ###
 export DOTFILES_DIR="$HOME"/dotfiles
 export DOTFILES_CONFIG_DIR="$DOTFILES_DIR"/config
+
+export LANG=ja_JP.UTF-8
