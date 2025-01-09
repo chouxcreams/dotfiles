@@ -64,12 +64,12 @@ keymap:
   - name: 1password extension
     remap:
       CapsLock-Shift-x: M-Shift-x
+  - name: deepl extension
+    remap:
+      CapsLock-Shift-y: M-Shift-y
   - name: ScreenLock
     remap:
       CapsLock-Ctrl-q: Ctrl-Super-q
-  - name: Terminal HotKey
-    remap:
-      M-Space: F12
 
 shared:
   terminals: &terminals
