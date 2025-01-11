@@ -55,7 +55,7 @@ OSTYPE=$(uname -s)
 case "$OSTYPE" in
     Darwin)
         echo "macOS用の設定を適用します"
-        ln -sfv "$DOTFILES_CONFIG_DIR"/boarders "$XDG_CONFIG_HOME"
+        ln -sfv "$DOTFILES_CONFIG_DIR"/borders "$XDG_CONFIG_HOME"
         ln -sfv "$DOTFILES_CONFIG_DIR"/aerospace "$XDG_CONFIG_HOME"
         ln -sfv "$HOME"/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock "$DOTFILES_CONFIG_DIR/1password"
         ;;
