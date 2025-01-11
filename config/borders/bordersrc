@@ -2,10 +2,10 @@
 
 options=(
 	style=round
-	width=10.0
+	width=13.0
 	hidpi=off
 	active_color=0xff33ccee #BRGで設定する
-	inactive_color=0xff414550
+	inactive_color=0x0000000
 )
 
 borders "${options[@]}"
