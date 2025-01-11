@@ -2,7 +2,7 @@
 #MISE sources=["$MISE_DIR/tasks/symlink"]
 #MISE outputs={ auto = true }
 
-DOTFILES_DIR="$HOME"/dotfiles
+DOTFILES_DIR="$HOME"/src/github.com/chouxcreams/dotfiles
 DOTFILES_CONFIG_DIR="$DOTFILES_DIR"/config
 XDG_CONFIG_HOME="$HOME"/.config
 XDG_DATA_HOME="$HOME"/.local/share
@@ -48,5 +48,19 @@ ln -sfv "$DOTFILES_CONFIG_DIR"/glow "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/lazygit "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/rio "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/ghostty "$XDG_CONFIG_HOME"
+ln -sfv "$DOTFILES_CONFIG_DIR"/atuin "$XDG_CONFIG_HOME"
+
+OSTYPE=$(uname -s)
+case "$OSTYPE" in
+    Darwin)
+        echo "macOS用の設定を適用します"
+        ln -sfv "$DOTFILES_CONFIG_DIR"/boarders "$XDG_CONFIG_HOME"
+        ln -sfv "$DOTFILES_CONFIG_DIR"/aerospace "$XDG_CONFIG_HOME"
+        ln -sfv "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock" "$XDG_CONFIG_HOME/1password/agent.sock"
+        ;;
+    Linux)
+        echo "Linux用の設定を適用します"
+        ln -sfv "$DOTFILES_CONFIG_DIR"/xremap "$XDG_CONFIG_HOME"
+        ;;
+esac
 ln -sfv "$XDG_CONFIG_HOME/zsh/.zshenv" "$HOME/.zshenv"
-ln -sfv "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock" "$XDG_CONFIG_HOME/1password/agent.sock"
