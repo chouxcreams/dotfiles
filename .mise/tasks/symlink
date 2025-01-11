@@ -56,7 +56,7 @@ case "$OSTYPE" in
         echo "macOS用の設定を適用します"
         ln -sfv "$DOTFILES_CONFIG_DIR"/boarders "$XDG_CONFIG_HOME"
         ln -sfv "$DOTFILES_CONFIG_DIR"/aerospace "$XDG_CONFIG_HOME"
-        ln -sfv "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock" "$XDG_CONFIG_HOME/1password/agent.sock"
+        ln -sfv "$HOME"/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock "$DOTFILES_CONFIG_DIR/1password"
         ;;
     Linux)
         echo "Linux用の設定を適用します"
