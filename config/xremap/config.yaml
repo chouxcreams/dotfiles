@@ -6,7 +6,7 @@ modmap:
       Space:
         held: KEY_LEFTSHIFT
         alone: Space
-        alone_timeout_millis: 300
+        alone_timeout_millis: 200
   # - name: TerminalCapsLock
   #   remap:
   #     KEY_CAPSLOCK:
@@ -69,9 +69,18 @@ keymap:
   - name: deepl extension
     remap:
       CapsLock-Shift-y: M-Shift-y
+  - name: raindrop
+    remap:
+      CapsLock-Shift-s: M-Shift-s
+  - name: mouse dictionay
+    remap:
+      CapsLock-Shift-y: M-Shift-d
   - name: ScreenLock
     remap:
       CapsLock-Ctrl-q: Ctrl-Super-q
+  - name: Clipboard Paste
+    remap:
+      CapsLock-Ctrl-v: Ctrl-Super-v
 
 shared:
   terminals: &terminals
