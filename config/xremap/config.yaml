@@ -60,6 +60,8 @@ keymap:
       CapsLock-c: Ctrl-c
       CapsLock-q: Ctrl-q
       CapsLock-s: Ctrl-s
+      CapsLock-KEY_SEMICOLON: KEY_BACKSPACE
+      CapsLock-Shift-KEY_SEMICOLON: KEY_DELETE
 
   - name: 1password extension
     remap:
