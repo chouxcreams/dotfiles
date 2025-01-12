@@ -7,3 +7,5 @@ keybind = global:alt+space=toggle_quick_terminal
 theme = "iceberg-dark"
 background-opacity = 0.9
 config-file = ?local.conf
+gtk-titlebar = false
+gtk-tabs-location = bottom
