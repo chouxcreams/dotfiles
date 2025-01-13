@@ -61,6 +61,7 @@ case "$OSTYPE" in
         ;;
     Linux)
         echo "Linux用の設定を適用します"
+        mkdir -p "$HOME"/Pictures/screenshots
         ln -sfv "$DOTFILES_CONFIG_DIR"/xremap "$XDG_CONFIG_HOME"
         ln -sfv "$DOTFILES_CONFIG_DIR"/hypr "$XDG_CONFIG_HOME"
         ln -sfv "$DOTFILES_CONFIG_DIR"/wlogout "$XDG_CONFIG_HOME"
@@ -68,6 +69,7 @@ case "$OSTYPE" in
         ln -sfv "$DOTFILES_CONFIG_DIR"/dunst "$XDG_CONFIG_HOME"
         ln -sfv "$DOTFILES_CONFIG_DIR"/rofi "$XDG_CONFIG_HOME"
         ln -sfv "$DOTFILES_CONFIG_DIR"/cliphist "$XDG_CONFIG_HOME"
+        ln -sfv "$DOTFILES_CONFIG_DIR"/swappy "$XDG_CONFIG_HOME"
         ;;
 esac
 ln -sfv "$XDG_CONFIG_HOME/zsh/.zshenv" "$HOME/.zshenv"
