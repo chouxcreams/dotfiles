@@ -7,4 +7,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture 2
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 
+# cmd+ctrlを押しながらドラッグするとウィンドウを移動できるようにする
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
 echo "設定を適用するためには再起動してください"
