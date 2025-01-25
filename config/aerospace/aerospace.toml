@@ -101,10 +101,10 @@ ctrl-alt-slash = 'layout tiles horizontal vertical'
 ctrl-alt-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-ctrl-alt-h = 'focus left'
-ctrl-alt-j = 'focus down'
-ctrl-alt-k = 'focus up'
-ctrl-alt-l = 'focus right'
+ctrl-alt-h = 'focus left --boundaries all-monitors-outer-frame'
+ctrl-alt-j = 'focus down --boundaries all-monitors-outer-frame'
+ctrl-alt-k = 'focus up --boundaries all-monitors-outer-frame'
+ctrl-alt-l = 'focus right --boundaries all-monitors-outer-frame'
 ctrl-alt-left = 'focus left'
 ctrl-alt-down = 'focus down'
 ctrl-alt-up = 'focus up'
@@ -130,6 +130,8 @@ ctrl-alt-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 ctrl-alt-f = 'layout floating tiling' # ctrl-alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't needctrl-alt-1 = 'workspace 1'
+ctrl-alt-d = 'layout horizontal vertical'
+ctrl-alt-m = 'macos-native-minimize'
 ctrl-alt-1 = 'workspace 1'
 ctrl-alt-2 = 'workspace 2'
 ctrl-alt-3 = 'workspace 3'
@@ -162,15 +164,15 @@ ctrl-alt-9 = 'workspace 9'
 # ctrl-alt-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-ctrl-alt-shift-1 = 'move-node-to-workspace 1'
-ctrl-alt-shift-2 = 'move-node-to-workspace 2'
-ctrl-alt-shift-3 = 'move-node-to-workspace 3'
-ctrl-alt-shift-4 = 'move-node-to-workspace 4'
-ctrl-alt-shift-5 = 'move-node-to-workspace 5'
-ctrl-alt-shift-6 = 'move-node-to-workspace 6'
-ctrl-alt-shift-7 = 'move-node-to-workspace 7'
-ctrl-alt-shift-8 = 'move-node-to-workspace 8'
-ctrl-alt-shift-9 = 'move-node-to-workspace 9'
+ctrl-alt-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
+ctrl-alt-shift-2 = 'move-node-to-workspace 2 --focus-follows-window'
+ctrl-alt-shift-3 = 'move-node-to-workspace 3 --focus-follows-window'
+ctrl-alt-shift-4 = 'move-node-to-workspace 4 --focus-follows-window'
+ctrl-alt-shift-5 = 'move-node-to-workspace 5 --focus-follows-window'
+ctrl-alt-shift-6 = 'move-node-to-workspace 6 --focus-follows-window'
+ctrl-alt-shift-7 = 'move-node-to-workspace 7 --focus-follows-window'
+ctrl-alt-shift-8 = 'move-node-to-workspace 8 --focus-follows-window'
+ctrl-alt-shift-9 = 'move-node-to-workspace 9 --focus-follows-window'
 # ctrl-alt-shift-a = 'move-node-to-workspace A'
 # ctrl-alt-shift-b = 'move-node-to-workspace B'
 # ctrl-alt-shift-c = 'move-node-to-workspace C'
@@ -230,6 +232,9 @@ down = 'volume down'
 up = 'volume up'
 shift-down = ['volume set 0', 'mode main']
 
+ctrl-alt-tab = 'move-workspace-to-monitor --wrap-around next'
+ctrl-alt-shift-tab = 'move-workspace-to-monitor --wrap-around prev'
+
 # app-idは `aerospace list-apps` で取得できる
 [[on-window-detected]]
 if.app-id = 'com.googlecode.iterm2'
@@ -253,4 +258,8 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.ActivityMonitor'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Finder'
 run = 'layout floating'
