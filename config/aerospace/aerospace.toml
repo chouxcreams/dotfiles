@@ -130,7 +130,8 @@ ctrl-alt-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 ctrl-alt-f = 'layout floating tiling' # ctrl-alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't needctrl-alt-1 = 'workspace 1'
-ctrl-alt-d = 'layout horizontal vertical'
+ctrl-alt-d = 'layout h_tiles v_tiles'
+ctrl-alt-shift-d = 'layout v_accordion h_accordion'
 ctrl-alt-m = 'macos-native-minimize'
 ctrl-alt-1 = 'workspace 1'
 ctrl-alt-2 = 'workspace 2'
@@ -262,4 +263,8 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.tinyapp.TablePlus'
 run = 'layout floating'
