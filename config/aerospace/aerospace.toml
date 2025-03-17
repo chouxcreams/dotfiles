@@ -127,6 +127,8 @@ ctrl-alt-shift-z = 'move-node-to-monitor --focus-follows-window --wrap-around pr
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 ctrl-alt-minus = 'resize smart -50'
 ctrl-alt-equal = 'resize smart +50'
+ctrl-alt-shift-minus = 'resize smart -500'
+ctrl-alt-shift-equal = 'resize smart +500'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 ctrl-alt-f = 'layout floating tiling' # ctrl-alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't needctrl-alt-1 = 'workspace 1'
@@ -224,10 +226,10 @@ backspace = ['close-all-windows-but-current', 'mode main']
 # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
 #s = ['layout sticky tiling', 'mode main']
 
-ctrl-alt-shift-h = ['join-with left', 'mode main']
-ctrl-alt-shift-j = ['join-with down', 'mode main']
-ctrl-alt-shift-k = ['join-with up', 'mode main']
-ctrl-alt-shift-l = ['join-with right', 'mode main']
+ctrl-alt-shift-h = ['join-with left', 'layout v_accordion', 'mode main']
+ctrl-alt-shift-j = ['join-with down', 'layout h_accordion', 'mode main']
+ctrl-alt-shift-k = ['join-with up', 'layout h_accordion', 'mode main']
+ctrl-alt-shift-l = ['join-with right', 'layout v_accordion', 'mode main']
 
 down = 'volume down'
 up = 'volume up'

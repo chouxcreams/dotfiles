@@ -19,7 +19,7 @@ if [ "$base_branch" == "$current_branch" ]; then
   fi
 else
   # 現在のブランチに対してリベース
-  git pull origin $base_branch
+  git pull --rebase origin $base_branch
 
   # リベースが成功したかどうかをチェック
   if [ $? -eq 0 ]; then
