@@ -30,7 +30,6 @@ mkdir -p "$XDG_CACHE_HOME"/sheldon
 
 ln -sfv "$DOTFILES_CONFIG_DIR"/git "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/nano "$XDG_CONFIG_HOME"
-ln -sfv "$DOTFILES_CONFIG_DIR"/npm "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/micro "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/bat "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/starship.toml "$XDG_CONFIG_HOME"/starship.toml

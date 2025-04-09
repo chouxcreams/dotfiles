@@ -4,3 +4,4 @@ Taskfile.yml
 .mise.local.toml
 tmp/
 .DS_Store
+.local/
