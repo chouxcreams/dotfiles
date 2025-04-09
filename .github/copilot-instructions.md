@@ -30,6 +30,8 @@ make init # 初期化スクリプトを実行
   - `completion.zsh`: コマンド補完の設定
   - `dropbox.sh`: Dropboxのセットアップ
   - `macos.sh`: macOSの環境設定
+- `.github/`: GitHub関連のファイル
+  - `prompts/`: GitHub Copilotプロンプトテンプレート
 
 ## 主な機能
 
