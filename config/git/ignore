@@ -5,3 +5,7 @@ Taskfile.yml
 tmp/
 .DS_Store
 .local/
+
+**/.claude/settings.local.json
+
+**/.claude/settings.local.json
