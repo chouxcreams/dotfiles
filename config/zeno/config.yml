@@ -4,6 +4,10 @@ snippets:
     keyword: g
     snippet: git
 
+  - name: claude
+    keyword: c
+    snippet: claude
+
   - name: git create new branch
     keyword: sc
     snippet: switch -c {{branch_name}}
