@@ -45,6 +45,36 @@ snippets:
     context:
       lbuffer: "^git"
 
+  - name: create git worktree
+    keyword: wtc
+    snippet: wt-create {{branch_name}}
+    context:
+      lbuffer: "^git"
+
+  - name: git worktree
+    keyword: wt
+    snippet: worktree
+    context:
+      lbuffer: "^git"
+
+  - name: git worktree add
+    keyword: a
+    snippet: add
+    context:
+      lbuffer: "^git worktree"
+
+  - name: git worktree list
+    keyword: ls
+    snippet: list
+    context:
+      lbuffer: "^git worktree"
+
+  - name: git worktree remove
+    keyword: rm
+    snippet: remove
+    context:
+      lbuffer: "^git worktree"
+
   - name: git switch branch
     keyword: gsw
     snippet: git switch {{branch_name}}

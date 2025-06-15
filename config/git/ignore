@@ -5,3 +5,5 @@ Taskfile.yml
 tmp/
 .DS_Store
 .local/
+wt-*/
+.worktree/
