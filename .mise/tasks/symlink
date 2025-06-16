@@ -50,6 +50,10 @@ ln -sfv "$DOTFILES_CONFIG_DIR"/ghostty "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/atuin "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/zed "$XDG_CONFIG_HOME"
 
+# Claude Code設定
+mkdir -p "$HOME"/.claude
+ln -sfv "$DOTFILES_CONFIG_DIR"/claude/settings.json "$HOME"/.claude/settings.json
+
 OSTYPE=$(uname -s)
 case "$OSTYPE" in
     Darwin)
