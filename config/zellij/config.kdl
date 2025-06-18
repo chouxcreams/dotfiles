@@ -16,7 +16,10 @@ keybinds {
         }
     }
     locked {
-        bind "Ctrl g" { SwitchToMode "Normal"; }
+        bind "Ctrl g" {
+        	MessagePlugin "autolock" {payload "disable";};
+        	SwitchToMode "Normal"; 
+        }
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
@@ -143,7 +146,10 @@ keybinds {
         bind "d" { Detach; }
     }
     shared_except "locked" {
-        bind "Ctrl g" { SwitchToMode "Locked"; }
+        bind "Ctrl g" {
+        	MessagePlugin "autolock" {payload "disable";};
+        	SwitchToMode "Locked";
+       	}
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
