@@ -173,6 +173,7 @@ path=(
     $POETRY_HOME/bin(N-/)
     $PIPX_BIN_DIR(N-/)
     $RYE_HOME/shims/(N-/)
+    $DOTFILES_DIR/config/zeno/scripts(N-/)
     $path
 )
 

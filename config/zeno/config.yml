@@ -185,6 +185,16 @@ snippets:
     keyword: lg
     snippet: lazygit
 
+  - name: mise
+    keyword: m
+    snippet: mise
+
+  - name: mise run
+    keyword: r
+    snippet: run
+    context:
+      lbuffer: '^mise\s'
+
   - name: zellij
     keyword: zel
     snippet: zellij
@@ -224,9 +234,17 @@ completions:
     sourceCommand: "fd \".*\\.md\" -d 2"
     options:
       --prompt: "'glow stash> '"
+
   - name: zellij session
     patterns:
       - "^zellij (a|d|k|attach|delete|kill) $"
     sourceCommand: "zellij list-sessions --short"
     options:
       --prompt: "'zellij sessions> '"
+
+  - name: zellij layout
+    patterns:
+      - "^zellij(.*)(--layout|-l) $"
+    sourceCommand: "get-zellij-layout-list.sh"
+    options:
+      --prompt: "'zellij layouts> '"

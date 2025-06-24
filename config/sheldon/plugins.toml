@@ -40,6 +40,7 @@ __zeno_keybind() {
     bindkey '^m' zeno-auto-snippet-and-accept-line
     bindkey '^x '  zeno-insert-space
     bindkey '^x^m' accept-line
+    bindkey '^x^f' zeno-ghq-cd
   fi
 }
 zsh-defer __zeno_keybind
