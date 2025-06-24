@@ -28,6 +28,7 @@
 [alias]
 	plog = log --pretty='format:%C(yellow)%h %C(green)%cd%C(red)%d%n%C(reset)%s %C(cyan)[%an]%n' --date=format-local:'%Y/%m/%d %H:%M:%S'
 	ptt = push-to-test
+	up = update
 
 [push]
 	default = current
