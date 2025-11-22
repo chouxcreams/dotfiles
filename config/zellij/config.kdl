@@ -17,8 +17,8 @@ keybinds {
     }
     locked {
         bind "Ctrl g" {
-        	MessagePlugin "autolock" {payload "disable";};
-        	SwitchToMode "Normal"; 
+        	MessagePlugin "autolock" {payload "enable";};
+        	SwitchToMode "Normal";
         }
     }
     resize {
