@@ -270,3 +270,7 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.tinyapp.TablePlus'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.cisco.anyconnect.gui'
+run = 'layout floating'
