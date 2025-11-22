@@ -174,6 +174,7 @@ path=(
     $PIPX_BIN_DIR(N-/)
     $RYE_HOME/shims/(N-/)
     $DOTFILES_DIR/config/zeno/scripts(N-/)
+    $XDG_DATA_HOME/npm/bin(N-/)
     $path
 )
 
