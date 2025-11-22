@@ -6,5 +6,5 @@ ZJ_LAYOUT_DIR=$(zellij setup --check \
     | grep -o '".*"' - | tr -d '"')
 
 if [[ -d "${ZJ_LAYOUT_DIR}" ]];then
-        fd --type file . "${ZJ_LAYOUT_DIR}" | sed 's|.*/||'
+    fd --no-ignore --type file "(.*)kdl$" "${ZJ_LAYOUT_DIR}" | sed 's|.*/||; s|\.[^.]*$||'
 fi
