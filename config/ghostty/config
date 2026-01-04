@@ -8,3 +8,4 @@ theme = Iceberg Dark
 background-opacity = 0.9
 gtk-titlebar = false
 gtk-tabs-location = bottom
+keybind = shift+enter=text:\x1b\r
