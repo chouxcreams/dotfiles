@@ -49,6 +49,7 @@ ln -sfv "$DOTFILES_CONFIG_DIR"/rio "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/ghostty "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/atuin "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/zed "$XDG_CONFIG_HOME"
+ln -sfv "$DOTFILES_CONFIG_DIR"/nvim "$XDG_CONFIG_HOME"
 
 # Claude Code設定
 mkdir -p "$XDG_CONFIG_HOME"/claude
@@ -75,6 +76,7 @@ case "$OSTYPE" in
         ln -sfv "$DOTFILES_CONFIG_DIR"/rofi "$XDG_CONFIG_HOME"
         ln -sfv "$DOTFILES_CONFIG_DIR"/cliphist "$XDG_CONFIG_HOME"
         ln -sfv "$DOTFILES_CONFIG_DIR"/swappy "$XDG_CONFIG_HOME"
+        ln -sfv "$DOTFILES_CONFIG_DIR"/solaar "$XDG_CONFIG_HOME"
         ;;
 esac
 ln -sfv "$XDG_CONFIG_HOME/zsh/.zshenv" "$HOME/.zshenv"
