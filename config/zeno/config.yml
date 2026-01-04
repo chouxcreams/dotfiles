@@ -8,6 +8,10 @@ snippets:
     keyword: c
     snippet: claude
 
+  - name: nvim
+    keyword: v
+    snippet: nvim
+
   - name: git create new branch
     keyword: sc
     snippet: switch -c {{branch_name}}
