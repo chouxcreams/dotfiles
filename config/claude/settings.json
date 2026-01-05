@@ -5,6 +5,7 @@
       "Bash(ls:*)"
     ]
   },
+  "model": "opus",
   "enabledMcpjsonServers": ["github"],
   "includeCoAuthoredBy": false
 }
