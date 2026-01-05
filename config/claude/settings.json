@@ -1,4 +1,5 @@
 {
+  "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
       "Bash(mkdir:*)",
@@ -6,6 +7,7 @@
     ]
   },
   "model": "opus",
-  "enabledMcpjsonServers": ["github"],
-  "includeCoAuthoredBy": false
+  "enabledMcpjsonServers": [
+    "github"
+  ]
 }
