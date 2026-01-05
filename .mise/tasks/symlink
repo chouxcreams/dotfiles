@@ -54,6 +54,7 @@ ln -sfv "$DOTFILES_CONFIG_DIR"/nvim "$XDG_CONFIG_HOME"
 # Claude Code設定
 mkdir -p "$XDG_CONFIG_HOME"/claude
 ln -sfv "$DOTFILES_CONFIG_DIR"/claude/settings.json "$XDG_CONFIG_HOME"/claude/settings.json
+ln -sfv "$DOTFILES_CONFIG_DIR"/claude/statusline.sh "$XDG_CONFIG_HOME"/claude/statusline.sh
 ln -sfv "$DOTFILES_CONFIG_DIR"/claude/commands "$XDG_CONFIG_HOME"/claude/
 
 OSTYPE=$(uname -s)

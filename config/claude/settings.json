@@ -7,6 +7,10 @@
     ]
   },
   "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.config/claude/statusline.sh"
+  },
   "enabledMcpjsonServers": [
     "github"
   ]
