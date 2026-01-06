@@ -1,0 +1,75 @@
+/* SwayOSD スタイル設定 */
+/* カラースキーム: iceberg風 */
+
+window#osd {
+  padding: 12px 20px;
+  border-radius: 15px;
+  border: 2px solid #6b7089;
+  background-color: rgba(22, 24, 33, 0.95);
+}
+
+#container {
+  margin: 16px;
+}
+
+image,
+label {
+  color: #c6c8d1;
+}
+
+progressbar:disabled,
+image:disabled {
+  opacity: 0.5;
+}
+
+progressbar {
+  min-height: 6px;
+  border-radius: 999px;
+  background: transparent;
+  border: none;
+}
+
+progressbar trough {
+  min-height: inherit;
+  border-radius: inherit;
+  border: none;
+  background-color: #3d425b;
+}
+
+progressbar progress {
+  min-height: inherit;
+  border-radius: inherit;
+  border: none;
+  background-color: #84a0c6;
+}
+
+/* ミュート時のスタイル */
+progressbar.volume.muted progress {
+  background-color: #e27878;
+}
+
+progressbar.volume.muted trough {
+  background-color: #523d3d;
+}
+
+/* 輝度調整のスタイル */
+progressbar.brightness progress {
+  background-color: #b4be82;
+}
+
+/* CapsLock/NumLock インジケーター */
+.capslock,
+.numlock {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.capslock.enabled,
+.numlock.enabled {
+  color: #b4be82;
+}
+
+.capslock.disabled,
+.numlock.disabled {
+  color: #6b7089;
+}
