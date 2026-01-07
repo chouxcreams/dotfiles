@@ -3,6 +3,7 @@
 #### 環境変数の設定 ####
 export EDITOR=nano
 (( ${+commands[micro]} )) && EDITOR=micro
+(( ${+commands[nvim]} )) && EDITOR=nvim
 export PIPENV_VENV_IN_PROJECT=true
 
 ### Android ###
