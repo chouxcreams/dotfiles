@@ -1,54 +1,54 @@
 [
   {
-    "useRichSuggestion" : false,
-    "zenzaiProfile" : "",
-    "numCandidatesPerPage" : 9,
-    "useInputHistory" : true,
-    "stopStoreNewHistory" : false,
-    "specialConversionMode" : {
-      "extendedEmoji" : true,
-      "commaSeparatedNumber" : true,
-      "unicodeCodepoint" : true,
-      "hazkeyVersion" : true,
-      "calendar" : true,
-      "mailDomain" : true,
-      "time" : true,
-      "halfwidthKatakana" : true,
-      "romanTypography" : true
-    },
-    "autoConvertMode" : 3,
-    "zenzaiEnable" : true,
-    "submodeEntryPointChars" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
     "zenzaiInferLimit" : 10,
-    "numSuggestions" : 4,
-    "auxTextMode" : 3,
     "enabledTables" : [
       {
-        "isBuiltIn" : true,
         "name" : "Romaji",
+        "isBuiltIn" : true,
         "filename" : "Romaji"
       },
       {
+        "name" : "semicolon",
         "isBuiltIn" : false,
-        "name" : "test",
-        "filename" : "test.tsv"
+        "filename" : "semicolon.tsv"
       }
     ],
     "enabledKeymaps" : [
       {
-        "isBuiltIn" : true,
         "name" : "Fullwidth Symbol",
+        "isBuiltIn" : true,
         "filename" : "Fullwidth Symbol"
       },
       {
-        "isBuiltIn" : true,
         "name" : "Japanese Symbol",
+        "isBuiltIn" : true,
         "filename" : "Japanese Symbol"
       }
     ],
-    "suggestionListMode" : 3,
-    "useRichCandidates" : false,
+    "useRichSuggestion" : false,
+    "numSuggestions" : 4,
+    "auxTextMode" : 3,
     "profileName" : "Default",
-    "zenzaiContextualMode" : true
+    "stopStoreNewHistory" : false,
+    "useInputHistory" : true,
+    "zenzaiContextualMode" : true,
+    "numCandidatesPerPage" : 9,
+    "submodeEntryPointChars" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "autoConvertMode" : 3,
+    "specialConversionMode" : {
+      "mailDomain" : true,
+      "hazkeyVersion" : true,
+      "unicodeCodepoint" : true,
+      "commaSeparatedNumber" : true,
+      "romanTypography" : true,
+      "halfwidthKatakana" : true,
+      "extendedEmoji" : true,
+      "time" : true,
+      "calendar" : true
+    },
+    "useRichCandidates" : false,
+    "zenzaiEnable" : true,
+    "suggestionListMode" : 1,
+    "zenzaiProfile" : ""
   }
 ]
