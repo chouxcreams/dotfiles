@@ -1,6 +1,7 @@
 ---
 allowed_tools: Bash(git:*)
 description: "現在の修正内容をコミットします"
+model: "claude-sonnet-4-5" 
 ---
 
 # Commit
