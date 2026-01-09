@@ -1,0 +1,54 @@
+[
+  {
+    "useRichSuggestion" : false,
+    "zenzaiProfile" : "",
+    "numCandidatesPerPage" : 9,
+    "useInputHistory" : true,
+    "stopStoreNewHistory" : false,
+    "specialConversionMode" : {
+      "extendedEmoji" : true,
+      "commaSeparatedNumber" : true,
+      "unicodeCodepoint" : true,
+      "hazkeyVersion" : true,
+      "calendar" : true,
+      "mailDomain" : true,
+      "time" : true,
+      "halfwidthKatakana" : true,
+      "romanTypography" : true
+    },
+    "autoConvertMode" : 3,
+    "zenzaiEnable" : true,
+    "submodeEntryPointChars" : "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "zenzaiInferLimit" : 10,
+    "numSuggestions" : 4,
+    "auxTextMode" : 3,
+    "enabledTables" : [
+      {
+        "isBuiltIn" : true,
+        "name" : "Romaji",
+        "filename" : "Romaji"
+      },
+      {
+        "isBuiltIn" : false,
+        "name" : "test",
+        "filename" : "test.tsv"
+      }
+    ],
+    "enabledKeymaps" : [
+      {
+        "isBuiltIn" : true,
+        "name" : "Fullwidth Symbol",
+        "filename" : "Fullwidth Symbol"
+      },
+      {
+        "isBuiltIn" : true,
+        "name" : "Japanese Symbol",
+        "filename" : "Japanese Symbol"
+      }
+    ],
+    "suggestionListMode" : 3,
+    "useRichCandidates" : false,
+    "profileName" : "Default",
+    "zenzaiContextualMode" : true
+  }
+]

@@ -78,6 +78,7 @@ Linux)
     ln -sfv "$DOTFILES_CONFIG_DIR"/swappy "$XDG_CONFIG_HOME"
     ln -sfv "$DOTFILES_CONFIG_DIR"/swayosd "$XDG_CONFIG_HOME"
     ln -sfv "$DOTFILES_CONFIG_DIR"/solaar "$XDG_CONFIG_HOME"
+    ln -sfv "$DOTFILES_CONFIG_DIR"/hazkey "$XDG_CONFIG_HOME"
     ;;
 esac
 ln -sfv "$XDG_CONFIG_HOME/zsh/.zshenv" "$HOME/.zshenv"
