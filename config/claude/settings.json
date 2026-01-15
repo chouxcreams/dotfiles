@@ -11,7 +11,8 @@
   ],
   "statusLine": {
     "type": "command",
-    "command": "~/.config/claude/statusline.sh"
+    "command": "ccusage statusline | sed 's/🤖/󰚩/' | sed 's/💰//' | sed 's/🔥/󰈸/' | sed 's/🧠/󰧑/'",
+    "padding": 0
   },
   "model": "opus"
 }
