@@ -158,6 +158,7 @@ export WASMER_DIR="$XDG_DATA_HOME"/wasmer
 ### zellij ###
 
 ### zeno ###
+export ZENO_COMPLETION_FALLBACK=fzf-tab-complete
 
 ### zoxide ###
 export _ZO_DATA_DIR="$XDG_DATA_HOME/zoxide"
@@ -179,6 +180,7 @@ path=(
     $PIPX_BIN_DIR(N-/)
     $RYE_HOME/shims/(N-/)
     $DOTFILES_DIR/config/zeno/scripts(N-/)
+    $XDG_CACHE_HOME/.bun/bin(N-/)
     $XDG_DATA_HOME/npm/bin(N-/)
     $path
 )

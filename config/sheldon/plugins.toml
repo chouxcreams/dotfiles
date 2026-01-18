@@ -47,7 +47,7 @@ hooks.post = """
 __zeno_keybind() {
   if [[ -n $ZENO_LOADED ]]; then
     bindkey ' '  zeno-auto-snippet
-    # bindkey '^i' zeno-completion # fzf-tabと競合するのでコメントアウト
+    bindkey '^i' zeno-completion
     bindkey '^m' zeno-auto-snippet-and-accept-line
     bindkey '^x '  zeno-insert-space
     bindkey '^x^m' accept-line
