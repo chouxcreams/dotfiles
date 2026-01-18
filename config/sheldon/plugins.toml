@@ -13,6 +13,17 @@ apply = ["defer"]
 local = "~/.config/zsh/plugins/defer"
 use = ["*.zsh"]
 
+[plugins.fzf-tab]
+apply = ["defer"]
+github = "Aloxaf/fzf-tab"
+hooks.post = """
+__fzf_tab_keybind() {
+    bindkey '^I' fzf-tab-complete
+}
+
+zsh-defer __fzf_tab_keybind
+"""
+
 [plugins.zsh-completions]
 apply = ["defer"]
 github = "zsh-users/zsh-completions"
@@ -36,7 +47,7 @@ hooks.post = """
 __zeno_keybind() {
   if [[ -n $ZENO_LOADED ]]; then
     bindkey ' '  zeno-auto-snippet
-    bindkey '^i' zeno-completion
+    # bindkey '^i' zeno-completion # fzf-tabと競合するのでコメントアウト
     bindkey '^m' zeno-auto-snippet-and-accept-line
     bindkey '^x '  zeno-insert-space
     bindkey '^x^m' accept-line
