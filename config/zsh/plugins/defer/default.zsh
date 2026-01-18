@@ -43,6 +43,7 @@ alias ll='ls -la'
 
 ### fzf ###
 [ -f $XDG_DATA_HOME/fzf/fzf.zsh ] && source $XDG_DATA_HOME/fzf/fzf.zsh
+(( ${+commands[fzf]} )) && source <(fzf --zsh)
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND='fd --type f'
 export FZF_ALT_C_COMMAND='fd --type d'
