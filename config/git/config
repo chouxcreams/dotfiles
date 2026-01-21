@@ -58,3 +58,6 @@
 	helper = !/usr/bin/gh auth git-credential
 [difftool "critique"]
 	cmd = critique difftool \"$LOCAL\" \"$REMOTE\"
+[wt]
+	basedir = ~/.local/state/git/wt/{gitroot}
+	copyignored = true

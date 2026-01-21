@@ -115,22 +115,22 @@ export default defineConfig(() => ({
     },
 
     // worktree
-    {
-      name: "create git worktree",
-      keyword: "wtc",
-      snippet: "wt-create {{branch_name}}",
-      context: {
-        lbuffer: "^git",
-      },
-    },
-    {
-      name: "git worktree",
-      keyword: "wt",
-      snippet: "worktree",
-      context: {
-        lbuffer: "^git",
-      },
-    },
+    // {
+    //   name: "create git worktree",
+    //   keyword: "wtc",
+    //   snippet: "wt-create {{branch_name}}",
+    //   context: {
+    //     lbuffer: "^git",
+    //   },
+    // },
+    // {
+    //   name: "git worktree",
+    //   keyword: "wt",
+    //   snippet: "worktree",
+    //   context: {
+    //     lbuffer: "^git",
+    //   },
+    // },
     {
       name: "git worktree add",
       keyword: "a",
