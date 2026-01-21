@@ -25,11 +25,11 @@ modmap:
     remap:
       KEY_LEFTMETA:
         held: KEY_LEFTCTRL
-        alone: KEY_MUHENKAN
+        alone: KEY_HANJA
         alone_timeout_millis: 300
       KEY_RIGHTMETA:
         held: KEY_RIGHTCTRL
-        alone: KEY_HENKAN
+        alone: KEY_HANGEUL
         alone_timeout_millis: 300
       KEY_LEFTCTRL: KEY_LEFTMETA
       KEY_RIGHTCTRL: KEY_RIGHTMETA
@@ -60,6 +60,7 @@ keymap:
       CapsLock-c: Ctrl-c
       CapsLock-q: Ctrl-q
       CapsLock-s: Ctrl-s
+      CapsLock-o: Ctrl-o
       CapsLock-KEY_SEMICOLON: KEY_BACKSPACE
       CapsLock-Shift-KEY_SEMICOLON: KEY_DELETE
 
