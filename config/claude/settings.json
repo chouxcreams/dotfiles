@@ -2,10 +2,43 @@
   "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
-      "Bash(mkdir:*)",
-      "Bash(ls:*)"
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(find:*)",
+      "Bash(fd:*)",
+      "Bash(rg:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(git checkout:*)",
+      "Bash(git diff:*)",
+      "Bash(gh pr view:*)",
+      "Bash(git --no-pager diff:*)",
+      "mcp__github__get_pull_request",
+      "mcp__github__get_pull_request_files",
+      "mcp__github__search_pull_requests",
+      "mcp__github__pull_request_read",
+      "mcp__github__get_commit",
+      "mcp__github__get_file_contents",
+      "mcp__notion__fetch",
+      "mcp__notion__search",
+      "mcp__notion__notion-search",
+      "mcp__notion__notion-fetch",
+      "mcp__plugin_Notion_notion__notion-fetch",
+      "mcp__plugin_Notion_notion__notion-get-self",
+      "mcp__plugin_Notion_notion__notion-search",
+      "mcp__jetbrains__get_file_problems",
+      "mcp__jetbrains__list_directory_tree",
+      "mcp__jetbrains__reformat_file",
+      "mcp__jetbrains__get_run_configurations",
+      "mcp__jetbrains__open_file_in_editor",
+      "mcp__jetbrains__search_in_files_by_text"
+    ],
+    "deny": [
+      "mcp__jetbrains__replace_specific_text",
+      "mcp__jetbrains__execute_terminal_command"
     ]
   },
+  "model": "opus",
   "enabledMcpjsonServers": [
     "github"
   ],
@@ -14,5 +47,8 @@
     "command": "ccusage statusline | sed 's/🤖/󰚩/' | sed 's/💰//' | sed 's/🔥/󰈸/' | sed 's/🧠/󰧑/'",
     "padding": 0
   },
-  "model": "opus"
+  "enabledPlugins": {
+    "cc-notify@my-tools": true,
+    "newspicks-log-docs@newspicks-internal-marketplace": false
+  }
 }
