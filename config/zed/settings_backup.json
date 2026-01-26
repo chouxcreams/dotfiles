@@ -10,11 +10,12 @@
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  "agent": {
+  "assistant": {
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4o"
     },
+    "version": "2"
   },
   "vim_mode": false,
   "buffer_font_family": "HackGen35 Console NF",
