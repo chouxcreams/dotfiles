@@ -48,6 +48,6 @@
     "padding": 0
   },
   "enabledPlugins": {
-    "cc-notify@my-tools": true,
+    "cc-notify@my-tools": true
   }
 }
