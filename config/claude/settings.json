@@ -48,7 +48,6 @@
     "padding": 0
   },
   "enabledPlugins": {
-    "cc-notify@my-tools": true,
-    "newspicks-log-docs@newspicks-internal-marketplace": false
+    "cc-notify@my-tools": true
   }
 }
