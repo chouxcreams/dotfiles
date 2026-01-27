@@ -55,8 +55,6 @@ __zeno_keybind() {
   fi
 }
 zsh-defer __zeno_keybind
-
-alias gg='zeno-ghq-cd'
 """
 hooks.pre = """
 export ZENO_COMPLETION_FALLBACK=expand-or-complete
