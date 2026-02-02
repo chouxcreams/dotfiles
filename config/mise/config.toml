@@ -4,7 +4,7 @@ experimental = true
 [tools]
 deno = "latest"
 node = "latest"
-python = "latest"
+python = "system"
 "pipx:terminaltexteffects" = "latest"
 go = "latest"
 ghq = "latest"
