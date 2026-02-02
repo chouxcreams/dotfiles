@@ -52,6 +52,7 @@ ln -sfv "$DOTFILES_CONFIG_DIR"/zed "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/nvim "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/tmux "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/opencode "$XDG_CONFIG_HOME"
+ln -sfv "$DOTFILES_CONFIG_DIR"/gwq "$XDG_CONFIG_HOME"
 
 # Claude Code設定
 mkdir -p "$XDG_CONFIG_HOME"/claude
