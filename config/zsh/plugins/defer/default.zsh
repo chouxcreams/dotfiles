@@ -182,6 +182,7 @@ path=(
     $DOTFILES_DIR/config/zeno/scripts(N-/)
     $XDG_CACHE_HOME/.bun/bin(N-/)
     $XDG_DATA_HOME/npm/bin(N-/)
+    $XDG_CONFIG_HOME/spicetify(N-/)
     $path
 )
 
