@@ -17,33 +17,52 @@ modmap:
   #     only: com.mitchellh.ghostty
   - name: CapsLock
     remap:
-      KEY_LEFTCTRL:
-        held: KEY_CAPSLOCK
-        alone: BTN_TRIGGER_HAPPY1
-        alone_timeout_millis: 300
       KEY_CAPSLOCK:
-        held: KEY_LEFTCTRL
+        held: KEY_CAPSLOCK
         alone: KEY_ESC
         alone_timeout_millis: 300
   - name: IME and KeySwap
     remap:
       KEY_LEFTMETA:
-        held: KEY_LEFTMETA
+        held: KEY_LEFTCTRL
         alone: KEY_HANJA
         alone_timeout_millis: 300
       KEY_RIGHTMETA:
-        held: KEY_RIGHTMETA
+        held: KEY_RIGHTCTRL
         alone: KEY_HANGEUL
         alone_timeout_millis: 300
+      KEY_LEFTCTRL: KEY_LEFTMETA
+      KEY_RIGHTCTRL: KEY_RIGHTMETA
 
 virtual_modifiers:
   - CapsLock
 keymap:
-  - name: Backspace and Delete
+  - name: Emacs Like Cursor Move
     remap:
+      CapsLock-f: Left
+      CapsLock-b: Right
+      CapsLock-p: Up
+      CapsLock-n: Down
+      CapsLock-a: Home
+      CapsLock-e: End
+      # 残りはCapsLockをCtrlの操作に変換する
+      CapsLock-d: Ctrl-d
+      CapsLock-h: Ctrl-h
+      CapsLock-u: Ctrl-u
+      CapsLock-k: Ctrl-k
+      CapsLock-y: Ctrl-y
+      CapsLock-w: Ctrl-w
+      CapsLock-t: Ctrl-t
+      CapsLock-g: Ctrl-g
+      CapsLock-r: Ctrl-r
+      CapsLock-j: Ctrl-j
+      CapsLock-x: Ctrl-x
+      CapsLock-c: Ctrl-c
+      CapsLock-q: Ctrl-q
+      CapsLock-s: Ctrl-s
+      CapsLock-o: Ctrl-o
       CapsLock-KEY_SEMICOLON: KEY_BACKSPACE
       CapsLock-Shift-KEY_SEMICOLON: KEY_DELETE
-      BTN_TRIGGER_HAPPY1: [KEY_HANJA, Ctrl-b] # IMEをOFFにしてからCtrl-bを送る。tmuxのprefixにするため。
 
   - name: 1password extension
     remap:
