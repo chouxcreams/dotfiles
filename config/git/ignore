@@ -11,5 +11,6 @@ tmp/
 **/.claude/settings.local.json
 wt-*/
 .worktree/
+.gwq.toml
 
 CLAUDE.local.md

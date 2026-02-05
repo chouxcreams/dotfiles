@@ -1,5 +1,5 @@
 [worktree]
-basedir = "~/worktrees"
+basedir = "~/.local/share/gwq"
 auto_mkdir = true
 
 [finder]

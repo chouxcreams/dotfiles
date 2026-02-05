@@ -65,3 +65,13 @@ zj() {
   zellij attach "$session"
 }
 
+# gwqのworktree一覧から選択してcd
+wt() {
+    FZF_DEFAULT_OPTS="${FZF_DEFAULT_OPTS} --reverse --height=50%"
+    local selected
+    selected=$(gwq list --json | jq -r '.[] | "\(.branch)\t\(.path)"' | \
+        fzf-tmux -p \
+            --preview='git -C {2} log --oneline -20' \
+            --preview-window=right:50%) &&
+    cd "$(echo "$selected" | cut -f2)"
+}
