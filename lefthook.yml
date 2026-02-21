@@ -1,0 +1,15 @@
+pre-commit:
+  parallel: true
+  commands:
+    editorconfig:
+      glob: "*"
+      run: editorconfig-checker {staged_files}
+    yamlfmt:
+      glob: "*.yml"
+      run: yamlfmt -lint {staged_files}
+    shellcheck:
+      glob: "*.sh"
+      run: shellcheck {staged_files}
+    shellcheck-git-subcommand:
+      glob: "config/git/subcommand/git-*"
+      run: shellcheck {staged_files}
