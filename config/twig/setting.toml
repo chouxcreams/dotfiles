@@ -1,0 +1,1 @@
+extra_symlinks = ["Taskfile.yml", "mise.local.toml", "CLAUDE.local.md", ".vscode/**"]

@@ -67,6 +67,9 @@ export GOENV_ROOT="$XDG_DATA_HOME"/goenv
 ### Gradle ###
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 
+### gwq ###
+(( ${+commands[gwq]} )) && source <(gwq completion zsh)
+
 ### less ###
 export LESSHISTFILE=-
 

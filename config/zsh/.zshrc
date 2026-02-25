@@ -41,3 +41,5 @@ compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 zstyle ':completion:*' cache-path $XDG_CACHE_HOME/zsh/zcompcache-$ZSH_VERSION
 
 ssh-add -K ~/.ssh/id_rsa &> /dev/null
+
+export PATH=$PATH:/Users/shutarou.takayama/.spicetify

@@ -1,0 +1,9 @@
+[14:07:54 2026-02-06] FETCHING Version 2.42.8
+[14:07:54 2026-02-06] CREATING /Users/shutarou.takayama/.spicetify
+[14:07:54 2026-02-06] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.42.8/spicetify-2.42.8-darwin-arm64.tar.gz
+[14:07:55 2026-02-06] EXTRACTING /Users/shutarou.takayama/.spicetify/spicetify.tar.gz
+[14:07:55 2026-02-06] SETTING EXECUTABLE PERMISSIONS TO /Users/shutarou.takayama/.spicetify/spicetify
+[14:07:55 2026-02-06] REMOVING /Users/shutarou.takayama/.spicetify/spicetify.tar.gz
+[14:07:55 2026-02-06] APPENDING /Users/shutarou.takayama/.spicetify to PATH in /Users/shutarou.takayama/.config/zsh/.zshrc
+[14:07:55 2026-02-06] spicetify v2.42.8 was installed successfully to /Users/shutarou.takayama/.spicetify
+[14:07:55 2026-02-06] Run 'spicetify --help' to get started
