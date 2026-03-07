@@ -11,6 +11,7 @@
       "Bash(ls:*)",
       "Bash(git checkout:*)",
       "Bash(git diff:*)",
+      "Bash(git status:*)",
       "Bash(gh pr view:*)",
       "Bash(git --no-pager diff:*)",
       "mcp__github__get_pull_request",
@@ -48,6 +49,8 @@
     "padding": 0
   },
   "enabledPlugins": {
-    "cc-notify@my-tools": true
-  }
+    "cc-notify@my-tools": true,
+    "skill-creator@claude-plugins-official": true
+  },
+  "language": "Japanese"
 }
