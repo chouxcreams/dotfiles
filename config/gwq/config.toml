@@ -12,3 +12,8 @@ tilde_home = true
 [naming]
 template = "{{.Host}}/{{.Owner}}/{{.Repository}}/{{.Branch}}"
 sanitize_chars = { "/" = "-", ":" = "-" }
+
+[[repository_settings]]
+repository = "~/src/github.com/chouxcreams/dotfiles"
+setup_commands = ["mise trust"]
+
