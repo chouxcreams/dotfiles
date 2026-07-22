@@ -1,0 +1,29 @@
+{
+  "skill_name": "create-workspace",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "feature/add-fzf-config というブランチでworktreeを作って、ペインで開いて",
+      "expected_output": "gwq add -b でブランチとworktreeが作成され、現在のtmuxウインドウに新しいペインがworktreeディレクトリで開く。worktreeのパスがユーザーに伝えられる。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "ghosttyの設定を見直したいから、ブランチ切って別の作業場所を用意してくれる？",
+      "expected_output": "リポジトリの命名規則に沿ったブランチ名（例: feature/ghostty-config）が提案・使用され、worktree作成とtmuxペイン作成が行われる。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "test ブランチのworktreeをペインで開いて。上下分割で。",
+      "expected_output": "既存の test ブランチ・worktreeが再利用され（新規作成されない）、-v オプションで上下分割のペインが開く。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "新しいworktreeを作って、そこでclaudeにREADMEのtypo修正をやらせて",
+      "expected_output": "命名規則に沿ったブランチ名でworktreeとペインが作成され、-p オプション経由で新ペインのclaudeが起動する。プロンプトには新ペインのclaudeがコンテキストなしで作業できる自己完結した指示（READMEのtypo修正）が含まれる。",
+      "files": []
+    }
+  ]
+}
