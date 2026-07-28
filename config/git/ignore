@@ -7,7 +7,7 @@ tmp/
 .local/
 
 **/.claude/settings.local.json
-
+**/.claude/skills/*.local
 **/.claude/settings.local.json
 wt-*/
 .worktree/
@@ -15,4 +15,7 @@ wt-*/
 
 CLAUDE.local.md
 lefthook-local.yml
+.claude-task.md
+
+.playwright-mcp/
 

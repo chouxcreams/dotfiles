@@ -53,11 +53,17 @@ ln -sfv "$DOTFILES_CONFIG_DIR"/nvim "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/tmux "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/opencode "$XDG_CONFIG_HOME"
 ln -sfv "$DOTFILES_CONFIG_DIR"/gwq "$XDG_CONFIG_HOME"
+ln -sfv "$DOTFILES_CONFIG_DIR"/yazi "$XDG_CONFIG_HOME"
+
+# herdrはランタイムファイル(ソケット・ログ等)を~/.config/herdrに置くため、config.tomlのみリンクする
+mkdir -p "$XDG_CONFIG_HOME"/herdr
+ln -sfv "$DOTFILES_CONFIG_DIR"/herdr/config.toml "$XDG_CONFIG_HOME"/herdr/config.toml
 
 # Claude Code設定
 mkdir -p "$XDG_CONFIG_HOME"/claude
 ln -sfv "$DOTFILES_CONFIG_DIR"/claude/settings.json "$XDG_CONFIG_HOME"/claude/settings.json
 ln -sfv "$DOTFILES_CONFIG_DIR"/claude/statusline.sh "$XDG_CONFIG_HOME"/claude/statusline.sh
+ln -sfv "$DOTFILES_CONFIG_DIR"/agents/skills "$XDG_CONFIG_HOME"/claude/
 ln -sfv "$DOTFILES_CONFIG_DIR"/claude/commands "$XDG_CONFIG_HOME"/claude/
 
 OSTYPE=$(uname -s)
@@ -66,6 +72,7 @@ Darwin)
     echo "macOS用の設定を適用します"
     ln -sfv "$DOTFILES_CONFIG_DIR"/borders "$XDG_CONFIG_HOME"
     ln -sfv "$DOTFILES_CONFIG_DIR"/aerospace "$XDG_CONFIG_HOME"
+    ln -sfv "$DOTFILES_CONFIG_DIR"/swiftbar "$XDG_CONFIG_HOME"
     ln -sfv "$HOME"/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock "$DOTFILES_CONFIG_DIR/1password"
     ;;
 Linux)

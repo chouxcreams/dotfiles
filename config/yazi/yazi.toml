@@ -1,0 +1,3 @@
+# 非表示ファイルをデフォルトで表示する
+[mgr]
+show_hidden = true

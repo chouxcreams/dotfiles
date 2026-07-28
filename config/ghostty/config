@@ -1,6 +1,6 @@
 font-family = "HackGen Console NF"
 macos-option-as-alt = "left"
-font-size = "14"
+font-size = "15"
 quick-terminal-position = center
 quick-terminal-animation-duration = 0
 # keybind = global:alt+space=toggle_quick_terminal
